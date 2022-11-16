@@ -1,7 +1,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
 {{-- <title>{{ $page }} | AutoNavega</title> --}}
-<title>{{ $page }} | AutoNavega</title>
+<title>{{ $page }} | Ammor y Restauración</title>
 
 
 <meta property="og:url" content="https://autonavega.com/" />
@@ -35,6 +35,9 @@
 <link rel="stylesheet" href="{{asset('assets/plugins/owlcarousel/owl.carousel.min.css')}}">
 <link rel="stylesheet" href="{{asset('assets/plugins/owlcarousel/owl.theme.default.min.css')}}">
 
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
 @if(Route::is(['user.citas','user.comments']))
 <!-- Datatables CSS -->
 <link rel="stylesheet" href="{{asset("assets_admin/plugins/datatables/datatables.min.css")}}">
@@ -42,6 +45,8 @@
 <link rel="stylesheet" href="https://cdn.datatables.net/1.11.3/css/dataTables.bootstrap4.min.css">
 <link rel="stylesheet" href="https://cdn.datatables.net/buttons/2.1.0/css/buttons.bootstrap4.min.css">
 <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.2.9/css/responsive.bootstrap4.css">
+
+
 
 @endif
 <!-- jQuery -->

@@ -30,7 +30,7 @@
 						<img src="{{asset('assets/img/logo.png')}}" class="img-fluid" alt="Logo">
 					</a>
 					<a href="{{route('index')}}" class="navbar-brand logo-small">
-						<img width="100px" src="{{ asset("assets/img/logo-icon-blanco.png")}}" class="img-fluid" alt="Logo">
+						<img width="100px" src="{{ asset("assets/img/logo.png")}}" class="img-fluid" alt="Logo">
 					</a>
 				</div>
 				<div class="main-menu-wrapper">
@@ -45,14 +45,20 @@
 							<a href="{{ route('index') }}">Inicio</a>
 						</li>
 						<li class="{{ Request::is('agencias-automotrices') ? 'active' : '' }}">
-							<a href="{{ route('agencias') }}">Agencias Automotrices</a>
+							<a href="{{ route('agencias') }}">Eventos</a>
 						</li>
 						
 						<li class="{{ Request::is('nosotros') ? 'active' : '' }}">
-							<a href="{{route('nosotros')}}" >Nosotros</a>
+							<a href="{{route('nosotros')}}" >Ministerios</a>
+						</li>
+						<li class="{{ Request::is('contacto') ? 'active' : '' }}">
+							<a  href="{{route('contacto')}}" >Campus</a>
 						</li>
 						<li class="{{ Request::is('contacto') ? 'active' : '' }}">
 							<a  href="{{route('contacto')}}" >Contáctanos</a>
+						</li>
+						<li class="{{ Request::is('contacto') ? 'active' : '' }}">
+							<a  href="{{route('contacto')}}" >Blog</a>
 						</li>
 						@auth
 							@if(auth()->user()->hasRole('Dealer'))

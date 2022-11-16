@@ -7,17 +7,20 @@
 	<div class="layer">
 		<div class="home-banner"></div>
 		<div class="container">
-			<div class="row justify-content-center">
+			<div class="row">
 				<div class="col-lg-12">
 					<div class="section-search">
 						<h3>Encuentra la Agencia ideal para todo<br>lo que necesites con tu auto <span>¡fácil!</span></h3>
 						<p>Busca entre más de 2000 agencias alrededor de México verificadas</p>
 						<div class="row mt-4">
-							<div class="col-sm-6 mt-4">
-								<button type="button" class="btn btn-lg btn-primary p-3" id="btn_search" > <i class="fas fa-search" ></i>  <span class="text-white h4"> Quiero encontrar una agencia</span></button>
+							<div class="col-sm-4 mt-4">
+								<button type="button" class="btn btn-sm btn-primary p-3" id="btn_search" > <i class="fas fa-search" ></i>  <span class="text-white h4"> Donaciones</span></button>
 							</div>
-							<div class="col-sm-6 mt-4">
-								<button class="btn btn-lg btn-primary p-3" id="btn_star" > <i class="fas fa-star" ></i> <span class="text-white h4 "> Quiero calificar una agencia.</span></button>
+							<div class="col-sm-4 mt-4">
+								<button class="btn btn-lg btn-primary p-3" id="btn_star" > <i class="fas fa-star" ></i> <span class="text-white h4 "> Ubicaciones</span></button>
+							</div>
+							<div class="col-sm-4 mt-4">
+								<button class="btn btn-lg btn-primary p-3" id="btn_star" > <i class="fas fa-star" ></i> <span class="text-white h4 "> Contacto</span></button>
 							</div>
 						</div>
 
@@ -57,14 +60,49 @@
 	</div>
 </section>
 <!-- /Hero Section -->
+<!-- quienes-somos -->
+<section class="quienes-somos" >
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="row">
+					<div class="col-md-6 float-righ offset-6">
+						<h3 class="text-white" >Somos <strong> Iglesia</strong></h3>
+					</div>
+				</div>
+				<div class="row justify-content-center">
+					<div class="col-sm-6" data-aos="fade-up">
+						<div class="video">
+							<img src="{{asset('assets/img/index/somos_iglesia.gif')}}" class="img-fluid" alt="Somos iglesia">
+						</div>
+
+					</div>
+					<div class="col-sm-6" data-aos="fade-left">
+						<div class="text">
+							<p class="text-white">
+								Nuestra misión es Amar a Dios, amar al prójimo y hacer discípulos.
+							</p>
+							<p class="text-white" >
+								Nuestra visión es Conquistar y Transformar.
+							</p>
+							<a class="btn btn-white btn-sm p-2 mt-4"><i class="fa fa-lightbulb"></i> Estrategia  </a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- /quienes-somos -->
 <!-- How It Works -->
 <section class="how-work">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12">
 				<div class="heading howitworks">
-					<h2>Cómo funciona <strong class="text-primary" >AUTONAVEGA</strong></h2>
-					<span>Conoce los pasos a seguir para visitar la agencia ideal para ti</span>
+					<h2>Somos <strong class="text-primary" >Iglesia</strong></h2>
+					<span>Nuestra misión es Amar a Dios, amar al prójimo y hacer discípulos.</span>
+					<span>Nuestra visión es Conquistar y Transformar</span>
 				</div>
 				<div class="howworksec">
 					<div class="row">
@@ -115,41 +153,7 @@
 	</div>
 </section>
 <!-- /How It Works -->
-<!-- quienes-somos -->
-<section class="quienes-somos" >
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-12">
-				<div class="row">
-					<div class="col-md-6 float-righ offset-6">
-						<h3 class="text-white" >QUIÉNES <strong> SOMOS</strong></h3>
 
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-sm-6">
-						<div class="video">
-							<iframe src="https://player.vimeo.com/video/241712124?h=edb4cc5493" width="550" height="352" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-						</div>
-
-					</div>
-					<div class="col-sm-6">
-						<div class="text">
-							<p class="text-white">Es un espacio usado como recurso de rankeo de concesionarios automotrices y centros de negocio de la industria automotriz, que ofrece mediante su sistema de comunicación y calificación de servicios una red social donde exista comunicación con sus usuarios, así como la transparencia y apertura de opinión de los usuarios.
-							</p>
-							<p class="text-white" >
-							Se fundó en 2016 para ayudar a las personas a encontrar negocios locales del giro de la industria automotriz y sus relacionados y poder hacer reseñas de los servicios brindados.
-							</p>
-							<p class="text-white">
-							Autonavega.com proporciona a sus clientes un directorio amplio en línea con más de 1,000 establecimientos en todo el país, incluyendo talleres de servicio, showrooms de venta de autos, grupos automotrices, etc. La compañía ofrece una fuente única de reseñas a nivel nacional.</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-<!-- /quienes-somos -->
 
 
 <!-- como-funciona -->
