@@ -11,7 +11,7 @@
 					<div class="col-md-6 col-lg-6">
 						<a href="{{ route('landing.index') }}"> <img class="img-fluid mb-4" width="30%" src="{{ asset('assets/img/logo.png') }}" alt="Logo AutoNavega Footer"></a>
 						<div class="copyright-text">
-							<p class="text-white" >Copyright &copy; 2021 - {{ date('Y') }} MORGUI, S.A.P.I. Todos los derechos reservados. <br> La marca <a href="{{route('index')}}">AutoNavega</a>  es una marca registrada. <br> El logotipo es una marca comercial registrada.</p> 
+							<p class="text-white" >Copyright &copy; 2021 - {{ date('Y') }} Todos los derechos reservados. </p>
 						</div>
 					</div>
 					<div class="col-md-6 col-lg-6">

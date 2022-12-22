@@ -16,5 +16,9 @@ class IndexController extends Controller
         return view('index');
     }
 
+    public function matrimonios(){
+        return view('index.matrimonios');
+    }
+
 
 }

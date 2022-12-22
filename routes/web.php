@@ -14,6 +14,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 Route::get('/', 'IndexController@index')->name('index');
+Route::get('/matrimonios', 'IndexController@matrimonios')->name('index.matrimonios');
 
 
 
@@ -267,8 +268,6 @@ Route::Group(['prefix' => 'admin'], function () {
 
     Route::post('/login', 'Auth\LoginController@login_admin')->name('admin.login');
     Route::post('/login-user', 'Auth\LoginController@login_user')->name('user.login');
-
-
 
 
     Route::get('/inicio', 'AdminController@dashboard')->name('dashboard');

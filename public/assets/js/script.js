@@ -7,6 +7,18 @@ Version      : 1.0
 (function ($) {
 	"use strict";
 
+	$(window).scroll(function () {
+
+		if ($(this).scrollTop() > 600) {
+			$(".header").css("background-color", "var(--white)");
+			$(".main-nav>li>a").css("color", "var(--black)");
+		} else {
+			$(".header").css("background-color", "transparent");
+			$(".main-nav>li>a").css("color", "var(--white)");
+		}
+
+	});
+
 	if ($(window).width() > 767) {
 		if ($('.theiaStickySidebar').length > 0) {
 			$('.theiaStickySidebar').theiaStickySidebar({
@@ -135,6 +147,30 @@ Version      : 1.0
 	if ($('.marca-slider').length > 0) {
 		$('.marca-slider').owlCarousel({
 			items: 3,
+			loop: false,
+			margin: 30,
+			dots: true,
+			responsiveClass: true,
+			responsive: {
+				0: {
+					items: 1,
+					rows: 1
+				},
+				768: {
+					items: 2,
+					rows: 2
+				},
+				1170: {
+					items: 4,
+					rows: 2
+				}
+			}
+		});
+	}
+
+	if ($('.page-slider').length > 0) {
+		$('.page-slider').owlCarousel({
+			items: 2,
 			loop: false,
 			margin: 30,
 			dots: true,

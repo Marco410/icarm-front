@@ -13,7 +13,7 @@
 	<!-- /Loader -->
 	@endif
 	<div class="main-wrapper">
-	@if(Route::is(['index','agencias','agencia.detalles','brands','contacto','nosotros','user.dashboard','user.reviews','user.agencies','user.agencies.claim','user.agency.stats','user.notifications','user.citas','user.citas.ver','user.comments','user.comments.see','user.personal.ver','user.personal','about-us','categories','contact-us','faq','privacy-policy','search','service-details','term-condition']) ||  $exception )
+	@if(Route::is(['index','index.matrimonios']) ||  $exception )
 		<!-- Header -->
 		<header class="header">
 		<div class="header-fixed">
@@ -27,16 +27,16 @@
 						</span>
 					</a>
 					<a href="{{ route('index') }}" class="navbar-brand logo">
-						<img src="{{asset('assets/img/logo.png')}}" class="img-fluid" alt="Logo">
+						<img src="{{asset('assets/img/logo.png')}}" class="img-fluid" style="border-radius: 20px" alt="Logo">
 					</a>
 					<a href="{{route('index')}}" class="navbar-brand logo-small">
-						<img width="100px" src="{{ asset("assets/img/logo.png")}}" class="img-fluid" alt="Logo">
+						<img width="100px" src="{{ asset("assets/img/logo.png")}}" style="border-radius: 20px" class="img-fluid" alt="Logo">
 					</a>
 				</div>
 				<div class="main-menu-wrapper">
 					<div class="menu-header">
 						<a href="{{route('index')}}" class="menu-logo">
-							<img src="{{asset("assets/img/logo.png")}}" class="img-fluid" alt="Logo">
+							<img src="{{asset("assets/img/logo.png")}}" style="border-radius: 100px" height="20px" class="img-fluid" alt="Logo">
 						</a>
 						<a id="menu_close" class="menu-close" href="javascript:void(0);"> <i class="fas fa-times"></i></a>
 					</div>
@@ -45,20 +45,35 @@
 							<a href="{{ route('index') }}">Inicio</a>
 						</li>
 						<li class="{{ Request::is('agencias-automotrices') ? 'active' : '' }}">
-							<a href="{{ route('agencias') }}">Eventos</a>
+							<a href="#eventos">Eventos</a>
 						</li>
 						
-						<li class="{{ Request::is('nosotros') ? 'active' : '' }}">
-							<a href="{{route('nosotros')}}" >Ministerios</a>
+						<li class="has-submenu {{ Request::is('nosotros') ? 'active' : '' }} ">
+							<a href="#" >Ministerios <i class="fas fa-chevron-down"></i></a>
+							<ul class="submenu">
+								<li class=""><a href="{{route('index.matrimonios')}}">Matrimonios</a></li>
+								<li class=""><a href="#">Mujeres</a></li>
+								<li class=""><a href="#">Hombres</a></li>
+								<li class=""><a href="#">ICAR Kids</a></li>
+								<li class=""><a href="#">Jóvenes</a></li>
+								<li class=""><a href="#">Alabanza</a></li>
+								<li class=""><a href="#">Intercesión</a></li>
+								<li class=""><a href="#">Consolidación</a></li>
+								<li class=""><a href="#">Sport Ministry</a></li>
+							</ul>
+						</li>
+						<li class="has-submenu {{ Request::is('contacto') ? 'active' : '' }}">
+							<a  href="#" >Campus <i class="fas fa-chevron-down"></i></a>
+							<ul class="submenu">
+								<li class=""><a href="#">Central</a></li>
+								<li class=""><a href="#">Norte</a></li>
+							</ul>
 						</li>
 						<li class="{{ Request::is('contacto') ? 'active' : '' }}">
-							<a  href="{{route('contacto')}}" >Campus</a>
+							<a  href="#contacto" >Contáctanos</a>
 						</li>
 						<li class="{{ Request::is('contacto') ? 'active' : '' }}">
-							<a  href="{{route('contacto')}}" >Contáctanos</a>
-						</li>
-						<li class="{{ Request::is('contacto') ? 'active' : '' }}">
-							<a  href="{{route('contacto')}}" >Blog</a>
+							<a  href="#" >Blog</a>
 						</li>
 						@auth
 							@if(auth()->user()->hasRole('Dealer'))

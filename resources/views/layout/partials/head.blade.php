@@ -1,25 +1,25 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
 {{-- <title>{{ $page }} | AutoNavega</title> --}}
-<title>{{ $page }} | Ammor y Restauración</title>
+<title>{{ $page }} | Amor y Restauración</title>
 
 
-<meta property="og:url" content="https://autonavega.com/" />
+<meta property="og:url" content="https://amoryrestauracion.tv" />
 <meta property="og:type" content="website" />
 <meta property="og:title" content="{{ $page }} " />
 <meta property="og:description" content="Encuentra la Agencia ideal para todo lo que necesites con tu auto ¡fácil! Busca entre más de 2000 agencias alrededor de México verificadas" />
-<meta property="og:image" content="https://autonavega.com/assets/img/logo-negro.png" />
+<meta property="og:image" content="https://amoryrestauracion.tv/assets/img/logo-negro.png" />
 <meta property="og:locale" content="es_MX" />
 <meta property="og:locale:alternate" content="en_US" />
 <meta property="og:site_name" content="AutoNavega" />
 
 <meta name="twitter:description" content="Encuentra la Agencia ideal para todo lo que necesites con tu auto ¡fácil! Busca entre más de 2000 agencias alrededor de México verificadas"/>
-<meta name="twitter:image" content="https://autonavega.com/assets/img/logo-negro.png"/>
+<meta name="twitter:image" content="https://amoryrestauracion.tv/assets/img/logo-negro.png"/>
 <meta name="twitter:site" content="@autonavega"/>
 <meta name="twitter:creator" content="@autonavega"/>
 <meta name="twitter:via" content="autonavega"/>
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:url" content="https://autonavega.com/"/>
+<meta name="twitter:url" content="https://amoryrestauracion.tv/"/>
 <meta name="twitter:domain" content="autonavega.com">
 
 <!-- Favicon -->
@@ -55,11 +55,11 @@
 <script src="{{asset('assets/js/popper.min.js')}}"></script>
 <script src="{{asset('assets/plugins/bootstrap/js/bootstrap.min.js')}}"></script>
 
-<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+{{-- <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bbbootstrap/libraries@main/choices.min.css">
 <script src="https://cdn.jsdelivr.net/gh/bbbootstrap/libraries@main/choices.min.js"></script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.css"> --}}
 @if(Route::is(['agencia.detalles']))
 <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
 @endif
