@@ -1037,7 +1037,7 @@ ul li {
 -----------------------*/
 
 .header {
-	background: transparent;
+	background: rgba(0, 0, 0, 0.5);
 	position: fixed;
 	left: 0;
 	top: 0;
@@ -1503,6 +1503,7 @@ html.menu-opened body {
 	right: 0;
 	bottom: 0;
 	z-index: -1;
+	object-fit: cover;
 }
 
 .hero nav ul li a {
@@ -1518,6 +1519,10 @@ html.menu-opened body {
 .hero .content p {
 	color: var(--white);
 	font-size: 17px;
+}
+
+.hero .content img {
+	width: 40%;
 }
 
 .content h1 {
@@ -1888,6 +1893,7 @@ html.menu-opened body {
 	left: 15px;
 	top: 15px;
 	z-index: 1;
+	margin-right: 5px;
 }
 
 .cate-title h3 {
@@ -1918,6 +1924,12 @@ html.menu-opened body {
 
 .cate-title h3 span i {
 	color: greenyellow;
+	font-size: 12px;
+	margin-right: 3px;
+}
+
+.blog .cate-title h3 span i {
+	color: var(--primary);
 	font-size: 12px;
 	margin-right: 3px;
 }
@@ -6187,6 +6199,12 @@ table.table td h2 span {
 	padding-bottom: 105px;
 }
 
+.inner-page-hero h3 {
+	font-size: 50px;
+	color: var(--black);
+	font-weight: bold;
+}
+
 .inner-page-hero .sticky-top {
 	top: 120px;
 	z-index: 1;
@@ -6245,6 +6263,58 @@ i {
 }
 
 .carousel-page {
+	padding-top: 0px;
+	padding-bottom: 105px;
+}
+
+.image-text-section {
+	padding-top: 50px;
+	padding-bottom: 105px;
+}
+
+.image-text-section .sticky-top {
+	top: 120px;
+	z-index: 1;
+	align-items: flex-end;
+}
+
+.image-text-section .sticky-top h3 {
+	font-size: 44px;
+}
+
+.image-text-section .sticky-top a {
+	border: 2px solid var(--primary);
+	padding: 10px 20px;
+	border-radius: 15px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	color: var(--black);
+	font-size: 14px;
+}
+
+.image-text-section .sticky-top a:hover {
+	color: var(--primary);
+	border: 2px solid var(--white);
+}
+
+.image-text-section .img-back img {
+	width: 100%;
+	border-radius: 8px;
+	box-shadow: 0 5px 20px rgb(0 0 0 / 30%);
+
+}
+
+.image-text-section .sticky-top h3 {
+	font-size: 44px;
+}
+
+
+.blog {
 	padding-top: 10px;
 	padding-bottom: 105px;
+}
+
+.blog h2 {
+	font-size: 44px;
+	margin-bottom: 20px;
 }

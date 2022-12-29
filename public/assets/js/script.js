@@ -13,7 +13,7 @@ Version      : 1.0
 			$(".header").css("background-color", "var(--white)");
 			$(".main-nav>li>a").css("color", "var(--black)");
 		} else {
-			$(".header").css("background-color", "transparent");
+			$(".header").css("background-color", "rgba(0,0,0,0.5)");
 			$(".main-nav>li>a").css("color", "var(--white)");
 		}
 
@@ -168,8 +168,8 @@ Version      : 1.0
 		});
 	}
 
-	if ($('.page-slider').length > 0) {
-		$('.page-slider').owlCarousel({
+	if ($('.blog-slider').length > 0) {
+		$('.blog-slider').owlCarousel({
 			items: 2,
 			loop: false,
 			margin: 30,
@@ -177,11 +177,11 @@ Version      : 1.0
 			responsiveClass: true,
 			responsive: {
 				0: {
-					items: 1,
+					items: 2,
 					rows: 1
 				},
 				768: {
-					items: 2,
+					items: 3,
 					rows: 2
 				},
 				1170: {
@@ -250,11 +250,10 @@ Version      : 1.0
 					items: 1
 				},
 				600: {
-					items: 1
+					items: 2
 				},
 				1000: {
-					items: 1,
-					loop: false,
+					items: 3,
 					margin: 20
 				}
 			}

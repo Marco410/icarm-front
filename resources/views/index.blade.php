@@ -9,8 +9,8 @@
         <div class="content">
             <h1 data-aos="fade-up">Amor & Restauración</h1>
             <a data-aos="fade-up" href="#">Donaciones</a>
-            <a data-aos="fade-right" href="#">Ubicaciones</a>
-            <a data-aos="fade-left" href="#">Contácto</a>
+            <a data-aos="fade-right" href="#ubicaciones">Ubicaciones</a>
+            <a data-aos="fade-left" href="#contacto">Contácto</a>
         </div>
     </section>
     {{-- Eventos section --}}
@@ -34,7 +34,6 @@
                     </div>
                     <div class="service-carousel" data-aos="fade-up">
                         <div class="marca-slider owl-carousel owl-theme owl-loaded owl-drag">
-
                             <div class="owl-stage-outer">
                                 <div class="owl-stage"
                                     style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s; width: 10200px;">
@@ -349,7 +348,7 @@
     </section>
     <!-- /Visitanos -->
     <!-- Mapas -->
-    <section class="map-section">
+    <section class="map-section" id="ubicaciones">
         <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1772120.9691359256!2d-96.10563018172124!3d29.83040563736779!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640c45a480d0599%3A0x4863f76bb2d998be!2s1610%20Campbell%20Rd%2C%20Houston%2C%20TX%2077055%2C%20EE.%20UU.!5e0!3m2!1ses-419!2smx!4v1669260071027!5m2!1ses-419!2smx&"
             width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"

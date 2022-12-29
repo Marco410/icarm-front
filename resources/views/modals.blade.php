@@ -1,17 +1,18 @@
     <!--  Modals -->
     @if (session('status') || session('errorL'))
-    <script>
-        $( document ).ready(function() {
-            $('#login_modal').modal('toggle');
-        });
-    </script>
+        <script>
+            $(document).ready(function() {
+                $('#login_modal').modal('toggle');
+            });
+        </script>
     @endif
     <!-- Login Modal -->
     <div class="modal account-modal fade" id="login_modal">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header p-0 border-0">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">	<span aria-hidden="true">&times;</span>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span
+                            aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
@@ -19,8 +20,8 @@
                         <h3>Iniciar <span>Sesión</span></h3>
                     </div>
                     <form method="POST" action="{{ route('user.login') }}">
-							{{ csrf_field() }}
-                        <div class="form-group form-focus">
+                        {{ csrf_field() }}
+                        {{--   <div class="form-group form-focus">
                             <label class="focus-label">Correo Electrónico</label>
                             <input type="email" name="email" class="form-control" placeholder="ejemplo@autonavega.com">
                         </div>
@@ -62,7 +63,7 @@
                             </div>
                         </div>
                         <div class="text-center dont-have">¿No tienes una cuenta? <a href="{{ route('registro') }}"  >Registrate</a>
-                        </div>
+                        </div> --}}
                     </form>
                 </div>
             </div>
@@ -71,80 +72,80 @@
     <!-- /Login Modal -->
 
     <script>
-        function close_login(){
+        function close_login() {
             $('#login_modal').hide();
             $('#user-register').show();
         }
 
-        function close_register(){
+        function close_register() {
             $('#user-register').hide();
             $('#login_modal').show();
         }
     </script>
 
-@if (session('loginSocial'))
-<script>
-    $( document ).ready(function() {
-        /* $('#login_social_modal').modal('toggle'); */
+    @if (session('loginSocial'))
+        <script>
+            $(document).ready(function() {
+                /* $('#login_social_modal').modal('toggle'); */
 
-        var notyf = new Notyf({
-            duration: 2000,
-            position: {
-                x: 'center',
-                y: 'center',
-            },
-            types: [
-                {
-                    type: 'warning',
-                    background: 'orange',
-                    icon: {
-                        className: 'material-icons',
-                        tagName: 'i',
-                        text: 'warning'
-                    }
-                },
-                {
-                    type: 'error',
-                    duration: 3000,
-                    dismissible: true
-                },
-                {
-                    type: 'success',
-                    duration: 1500,
-                    dismissible: true
-                }
-            ]
-        });
+                var notyf = new Notyf({
+                    duration: 2000,
+                    position: {
+                        x: 'center',
+                        y: 'center',
+                    },
+                    types: [{
+                            type: 'warning',
+                            background: 'orange',
+                            icon: {
+                                className: 'material-icons',
+                                tagName: 'i',
+                                text: 'warning'
+                            }
+                        },
+                        {
+                            type: 'error',
+                            duration: 3000,
+                            dismissible: true
+                        },
+                        {
+                            type: 'success',
+                            duration: 1500,
+                            dismissible: true
+                        }
+                    ]
+                });
 
-    notyf.success('Iniciaste sesión con éxito');
+                notyf.success('Iniciaste sesión con éxito');
 
-        /* setTimeout(() => {
-            $('#login_social_modal').modal('hide');
-        }, 1500); */
+                /* setTimeout(() => {
+                    $('#login_social_modal').modal('hide');
+                }, 1500); */
 
-    });
-</script>
-@endif
-<!-- Login Social Modal -->
-<div class="modal account-modal fade" id="login_social_modal">
-    <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-            <div class="modal-header p-0 border-0">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">	<span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <div class="row text-center">
-                    <div class="col-sm-12">
-                        <div class="alert alert-success">
-                            {{ session('loginSocial') }}
-                        </div>
-                        
-                    </div>
+            });
+        </script>
+    @endif
+    <!-- Login Social Modal -->
+    <div class="modal account-modal fade" id="login_social_modal">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header p-0 border-0">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span
+                            aria-hidden="true">&times;</span>
+                    </button>
                 </div>
-                
+                <div class="modal-body">
+                    <div class="row text-center">
+                        <div class="col-sm-12">
+                            <div class="alert alert-success">
+                                {{ session('loginSocial') }}
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </div>
     </div>
-</div>
-<!-- /Login Social Modal -->
+    <!-- /Login Social Modal -->

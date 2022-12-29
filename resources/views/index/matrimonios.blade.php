@@ -65,45 +65,56 @@
 
     <section class="carousel-page">
         <div class="container">
-            <div class="service-carousel" data-aos="fade-up">
-                <div class="page-slider owl-carousel owl-theme owl-loaded owl-drag">
+            <div class="" data-aos="fade-up">
+                <div class="images-carousel owl-carousel owl-theme owl-loaded owl-drag">
                     <div class="owl-stage-outer">
                         <div class="owl-stage"
                             style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s; width: 10200px;">
-                            <div class="owl-item active" style="width: 270px; margin-right: 30px;">
-                                <a
-                                    href="https://static.wixstatic.com/media/bf53c1_5e86b347672b41d0943027f8ee770a6f~mv2.jpg/v1/fill/w_734,h_958,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/bf53c1_5e86b347672b41d0943027f8ee770a6f~mv2.jpg">
+                            <div class="owl-item active" style="margin-right: 10px;">
+                                <a href="{{ asset('assets/img/index/matrimonios/carousel.png') }}">
                                     <div class="cate-widget">
-                                        <img class="img-fluid serv-img" alt="Marca Alfa Romeo"
-                                            src="https://static.wixstatic.com/media/bf53c1_5e86b347672b41d0943027f8ee770a6f~mv2.jpg/v1/fill/w_734,h_958,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/bf53c1_5e86b347672b41d0943027f8ee770a6f~mv2.jpg">
-                                        <div class="cate-title">
-                                            <h3><span><i class="fas fa-circle"></i> A&R Central</span></h3>
-                                        </div>
-                                        <div class="cate-count">
-                                            <i class="fas fa-calendar"></i> 16 nov - 19 nov
-                                        </div>
-                                        <div class="cate-hour">
-                                            <i class="fas fa-clock"></i> 10:00pm
-                                        </div>
+                                        <img class="img-fluid serv-img" alt="Carousel matrimonios"
+                                            src="{{ asset('assets/img/index/matrimonios/carousel.png') }}">
                                     </div>
                                 </a>
                             </div>
-
-                            <div class="owl-item" style="width: 270px; margin-right: 30px;">
-                                <a
-                                    href="https://static.wixstatic.com/media/bf53c1_5e86b347672b41d0943027f8ee770a6f~mv2.jpg/v1/fill/w_734,h_958,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/bf53c1_5e86b347672b41d0943027f8ee770a6f~mv2.jpg">
+                            <div class="owl-item" style="margin-right: 10px;">
+                                <a href="{{ asset('assets/img/index/matrimonios/carousel.png') }}">
                                     <div class="cate-widget">
-                                        <img class="img-fluid serv-img" alt="Marca Chevrolet"
-                                            src="https://static.wixstatic.com/media/bf53c1_5e86b347672b41d0943027f8ee770a6f~mv2.jpg/v1/fill/w_734,h_958,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/bf53c1_5e86b347672b41d0943027f8ee770a6f~mv2.jpg">
-                                        <div class="cate-title">
-                                            <h3><span><i class="fas fa-circle"></i> A&R Central</span></h3>
-                                        </div>
-                                        <div class="cate-count">
-                                            <i class="fas fa-calendar"></i> 16 nov - 19 nov
-                                        </div>
-                                        <div class="cate-hour">
-                                            <i class="fas fa-clock"></i> 10:00pm
-                                        </div>
+                                        <img class="img-fluid serv-img" alt="Carousel matrimonios"
+                                            src="{{ asset('assets/img/index/matrimonios/carousel.png') }}">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="owl-item" style="margin-right: 10px;">
+                                <a href="{{ asset('assets/img/index/matrimonios/carousel.png') }}">
+                                    <div class="cate-widget">
+                                        <img class="img-fluid serv-img" alt="Carousel matrimonios"
+                                            src="{{ asset('assets/img/index/matrimonios/carousel.png') }}">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="owl-item" style="margin-right: 10px;">
+                                <a href="{{ asset('assets/img/index/matrimonios/carousel.png') }}">
+                                    <div class="cate-widget">
+                                        <img class="img-fluid serv-img" alt="Carousel matrimonios"
+                                            src="{{ asset('assets/img/index/matrimonios/carousel.png') }}">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="owl-item" style="margin-right: 10px;">
+                                <a href="{{ asset('assets/img/index/matrimonios/carousel.png') }}">
+                                    <div class="cate-widget">
+                                        <img class="img-fluid serv-img" alt="Carousel matrimonios"
+                                            src="{{ asset('assets/img/index/matrimonios/carousel.png') }}">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="owl-item" style="margin-right: 10px;">
+                                <a href="{{ asset('assets/img/index/matrimonios/carousel.png') }}">
+                                    <div class="cate-widget">
+                                        <img class="img-fluid serv-img" alt="Carousel matrimonios"
+                                            src="{{ asset('assets/img/index/matrimonios/carousel.png') }}">
                                     </div>
                                 </a>
                             </div>

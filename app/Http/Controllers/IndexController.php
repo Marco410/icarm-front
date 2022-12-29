@@ -20,5 +20,21 @@ class IndexController extends Controller
         return view('index.matrimonios');
     }
 
+    public function mujeres(){
+        return view('index.mujeres');
+    }
+
+    public function hombres(){
+        return view('index.hombres');
+    }
+
+    public function kids(){
+        return view('index.kids');
+    }
+
+    public function error_build(){
+        return view('errors.build');
+    }
+
 
 }

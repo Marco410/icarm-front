@@ -15,6 +15,11 @@ use Illuminate\Support\Facades\Route;
 */
 Route::get('/', 'IndexController@index')->name('index');
 Route::get('/matrimonios', 'IndexController@matrimonios')->name('index.matrimonios');
+Route::get('/mujeres', 'IndexController@mujeres')->name('index.mujeres');
+Route::get('/hombres', 'IndexController@hombres')->name('index.hombres');
+Route::get('/kids', 'IndexController@kids')->name('index.kids');
+
+Route::get('/error-build', 'IndexController@error_build')->name('errors.build');
 
 
 
