@@ -32,6 +32,14 @@ class IndexController extends Controller
         return view('index.kids');
     }
 
+    public function jovenes(){
+        return view('index.jovenes');
+    }
+
+    public function alabanza(){
+        return view('index.alabanza');
+    }
+
     public function error_build(){
         return view('errors.build');
     }

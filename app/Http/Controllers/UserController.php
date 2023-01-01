@@ -37,6 +37,10 @@ class UserController extends Controller
         return view('usuario.user-dashboard');
     }
 
+    public function get_mamas(){
+        echo "Aqui";
+    }
+
     public function reviews(){
         $user_id = auth()->user()->id;
 

@@ -18,6 +18,8 @@ Route::get('/matrimonios', 'IndexController@matrimonios')->name('index.matrimoni
 Route::get('/mujeres', 'IndexController@mujeres')->name('index.mujeres');
 Route::get('/hombres', 'IndexController@hombres')->name('index.hombres');
 Route::get('/kids', 'IndexController@kids')->name('index.kids');
+Route::get('/jovenes', 'IndexController@jovenes')->name('index.jovenes');
+Route::get('/alabanza', 'IndexController@alabanza')->name('index.alabanza');
 
 Route::get('/error-build', 'IndexController@error_build')->name('errors.build');
 

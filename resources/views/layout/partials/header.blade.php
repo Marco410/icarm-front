@@ -13,8 +13,16 @@
     <!-- /Loader -->
 @endif
 <div class="main-wrapper">
-    @if (Route::is(['index', 'index.matrimonios', 'index.mujeres', 'index.hombres', 'index.kids', 'errors.build']) ||
-        $exception)
+    @if (Route::is([
+        'index',
+        'index.matrimonios',
+        'index.mujeres',
+        'index.hombres',
+        'index.kids',
+        'index.jovenes',
+        'index.alabanza',
+        'errors.build',
+    ]) || $exception)
         <!-- Header -->
         <header class="header">
             <div class="header-fixed">
@@ -60,8 +68,8 @@
                                     <li class=""><a href="{{ route('index.mujeres') }}">Mujeres</a></li>
                                     <li class=""><a href="{{ route('index.hombres') }}">Hombres</a></li>
                                     <li class=""><a href="{{ route('index.kids') }}">ICAR Kids</a></li>
-                                    <li class=""><a href="{{ route('errors.build') }}">Jóvenes</a></li>
-                                    <li class=""><a href="{{ route('errors.build') }}">Alabanza</a></li>
+                                    <li class=""><a href="{{ route('index.jovenes') }}">Jóvenes</a></li>
+                                    <li class=""><a href="{{ route('index.alabanza') }}">Alabanza</a></li>
                                     <li class=""><a href="{{ route('errors.build') }}">Intercesión</a></li>
                                     <li class=""><a href="{{ route('errors.build') }}">Consolidación</a></li>
                                     <li class=""><a href="{{ route('errors.build') }}">Sport Ministry</a></li>
