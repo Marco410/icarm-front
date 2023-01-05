@@ -25,6 +25,7 @@ Route::get('/error-build', 'IndexController@error_build')->name('errors.build');
 
 
 
+
 Route::get('/login/facebook', 'Auth\SocialLoginController@login')->name('login.facebook');
 Route::get('/facebook/callback', 'Auth\SocialLoginController@callback')->name('callback.facebook');
 Route::get('/login/google', 'Auth\SocialLoginController@login_google')->name('login.google');
@@ -167,101 +168,6 @@ Route::Group(['prefix' => 'usuario'], function () {
 
 /*****************ADMIN ROUTES*******************/
 Route::Group(['prefix' => 'admin'], function () {
-    Route::get('/add-category', function () {
-        return view('admin.add-category');
-    })->name('add-category');
-    Route::get('/add-ratingstype', function () {
-        return view('admin.add-ratingstype');
-    })->name('add-ratingstype');
-    Route::get('/add-subcategory', function () {
-        return view('admin.add-subcategory');
-    })->name('add-subcategory');
-    Route::get('/add-subscription', function () {
-        return view('admin.add-subscription');
-    })->name('add-subscription');
-    Route::get('/admin-notification', function () {
-        return view('admin.admin-notification');
-    })->name('admin-notification');
-    Route::get('/admin-profile', function () {
-        return view('admin.admin-profile');
-    })->name('admin-profile');
-    Route::get('/cancel-report', function () {
-        return view('admin.cancel-report');
-    })->name('cancel-report');
-    Route::get('/categories', function () {
-        return view('admin.categories');
-    })->name('categories');
-    Route::get('/complete-report', function () {
-        return view('admin.complete-report');
-    })->name('complete-report');
-    Route::get('/edit-category', function () {
-        return view('admin.edit-category');
-    })->name('edit-category');
-    Route::get('/edit-ratingstype', function () {
-        return view('admin.edit-ratingstype');
-    })->name('edit-ratingstype');
-    Route::get('/edit-subcategory/{id}', 'MarcaController@edit')->name('marca.edit');
-    Route::get('/edit-subscription', function () {
-        return view('admin.edit-subscription');
-    })->name('edit-subscription');
-    Route::get('/emailsettings', function () {
-        return view('admin.emailsettings');
-    })->name('emailsettings');
-    Route::get('/inprogress-report', function () {
-        return view('admin.inprogress-report');
-    })->name('inprogress-report');
-    Route::get('/payment_list', function () {
-        return view('admin.payment_list');
-    })->name('payment_list');
-    Route::get('/pending-report', function () {
-        return view('admin.pending-report');
-    })->name('pending-report');
-    Route::get('/ratingstype', function () {
-        return view('admin.ratingstype');
-    })->name('ratingstype');
-    Route::get('/reject-report', function () {
-        return view('admin.reject-report');
-    })->name('reject-report');
-    Route::get('/review-reports', function () {
-        return view('admin.review-reports');
-    })->name('review-reports');
-    Route::get('/service-details', function () {
-        return view('admin.service-details');
-    })->name('service-details');
-    Route::get('/service-list', function () {
-        return view('admin.service-list');
-    })->name('service-list');
-    Route::get('/service-providers', function () {
-        return view('admin.service-providers');
-    })->name('service-providers');
-    Route::get('/settings', function () {
-        return view('admin.settings');
-    })->name('settings');
-    Route::get('/sms-settings', function () {
-        return view('admin.sms-settings');
-    })->name('sms-settings');
-    Route::get('/stripe_payment_gateway', function () {
-        return view('admin.stripe_payment_gateway');
-    })->name('stripe_payment_gateway');
-    Route::get('/subcategories', function () {
-        return view('admin.subcategories');
-    })->name('subcategories');
-    Route::get('/subscriptions', function () {
-        return view('admin.subscriptions');
-    })->name('subscriptions');
-    Route::get('/total-report', function () {
-        return view('admin.total-report');
-    })->name('total-report');
-    Route::get('/users', function () {
-        return view('admin.users');
-    })->name('users');
-    Route::get('/wallet-history', function () {
-        return view('admin.wallet-history');
-    })->name('wallet-history');
-    Route::get('/wallet', function () {
-        return view('admin.wallet');
-    })->name('wallet');
-
 
     Route::get('/login', function () {
         return view('admin.login');

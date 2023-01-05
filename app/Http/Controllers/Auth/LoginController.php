@@ -98,21 +98,26 @@ class LoginController extends Controller
             'email.failed' => 'Correo no encontrado',
         ]);
 
-        $user = DB::table('users')->where('email',$datosUser['email'])->first();
+        $user = new User();
+        $user = $user->where('email', $datosUser['email'])->first();
+        
 
         if($user){
-            if(Hash::check($datosUser['password'], $user->password))
+            if($user->password == hash('sha512', $request->password))
             {
-                if($user->verify == 0){
+                $user->roles;
+               /*  if($user->verify == 0){
                     return redirect()->route('index')->with('errorL','Necesitas verificar tu correo electrónico. Checa tu bandeja de entrada o spam. Si no, da <a href="'.route('admin.login.ree.send.email',$user->email).'"> clic aquí </a> para reenviar el correo.');
-                }
-                Auth::guard('web')->loginUsingId($user->id);
+                } */
+                //Auth::loginUsingId($user->id);
 
-                if(auth()->user()->roles[0]->name == "Admin"){
+                return $user;
+
+               /*  if(auth()->user()->roles[0]->name == "Admin"){
                     return redirect()->route('dashboard');
                 }else{
                     return back();
-                }
+                } */
 
             }else{
                 return redirect()->route('index')->with('errorL','La contraseña es incorrecta');
