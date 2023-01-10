@@ -24,7 +24,7 @@
                         <div class="form-group form-focus">
                             <label class="focus-label">Correo Electrónico</label>
                             <input type="email" name="email" class="form-control"
-                                placeholder="ejemplo@autonavega.com">
+                                placeholder="ejemplo@amoryrestauracion.com">
                         </div>
                         <div class="form-group form-focus">
                             <label class="focus-label">Contraseña</label>

@@ -16,8 +16,8 @@
 <meta name="twitter:description"
     content="Iglesia Cristiana Amor & Restauración. Edificar con visión perfecta a través de la fe, la esperanza y el amor. Para conquistar y transformar los nuevos escenarios." />
 <meta name="twitter:image" content="https://amoryrestauracion.tv/assets/img/logo-negro.png" />
-<meta name="twitter:site" content="@autonavega" />
-<meta name="twitter:creator" content="@autonavega" />
+<meta name="twitter:site" content="@amoryrestauracion" />
+<meta name="twitter:creator" content="@amoryrestauracion" />
 <meta name="twitter:via" content="amoryrestauracion" />
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:url" content="https://amoryrestauracion.tv/" />
