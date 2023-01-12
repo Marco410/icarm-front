@@ -12,6 +12,7 @@ class Iglesia extends Model
     protected $fillable = [
         'nombre','web','calle','numero','colonia','cp','ciudad','pais','lat','lng','telefono','facebook','instagram','youtube','pastores','horarios','mision','historia'
     ];
+    //kjanscjnc
 
     public function user(){
         return $this->belongsTo(User::class);
