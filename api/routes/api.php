@@ -13,8 +13,8 @@ use Illuminate\Support\Facades\Route;
 | is assigned the "api" middleware group. Enjoy building your API!
 |
 */
-
-Route::get('api-test', 'UserController@test');
+/*
+Route::get('api-test', [UserController::class,'test']);
 
 Route::get('eventos', 'UserController@test');
 
@@ -23,7 +23,8 @@ Route::get('eventos/lista-grupos', 'EventoController@lista_grupos');
 Route::post('eventos/crear', 'EventoController@create');
 
 Route::post('denuncia/crear', 'DenunciaController@create');
-
+*/
+Route::get('test', 'UserController@index');
 
 
 Route::group([

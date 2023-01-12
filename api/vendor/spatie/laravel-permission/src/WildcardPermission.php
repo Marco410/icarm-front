@@ -41,18 +41,19 @@ class WildcardPermission
     public function implies($permission): bool
     {
         if (is_string($permission)) {
-            $permission = new self($permission);
+            $permission = new static($permission);
         }
 
         $otherParts = $permission->getParts();
 
         $i = 0;
+        $partsCount = $this->getParts()->count();
         foreach ($otherParts as $otherPart) {
-            if ($this->getParts()->count() - 1 < $i) {
+            if ($partsCount - 1 < $i) {
                 return true;
             }
 
-            if (! $this->parts->get($i)->contains(self::WILDCARD_TOKEN)
+            if (! $this->parts->get($i)->contains(static::WILDCARD_TOKEN)
                 && ! $this->containsAll($this->parts->get($i), $otherPart)) {
                 return false;
             }
@@ -60,8 +61,8 @@ class WildcardPermission
             $i++;
         }
 
-        for ($i; $i < $this->parts->count(); $i++) {
-            if (! $this->parts->get($i)->contains(self::WILDCARD_TOKEN)) {
+        for ($i; $i < $partsCount; $i++) {
+            if (! $this->parts->get($i)->contains(static::WILDCARD_TOKEN)) {
                 return false;
             }
         }
@@ -105,10 +106,10 @@ class WildcardPermission
             throw WildcardPermissionNotProperlyFormatted::create($this->permission);
         }
 
-        $parts = collect(explode(self::PART_DELIMITER, $this->permission));
+        $parts = collect(explode(static::PART_DELIMITER, $this->permission));
 
         $parts->each(function ($item, $key) {
-            $subParts = collect(explode(self::SUBPART_DELIMITER, $item));
+            $subParts = collect(explode(static::SUBPART_DELIMITER, $item));
 
             if ($subParts->isEmpty() || $subParts->contains('')) {
                 throw WildcardPermissionNotProperlyFormatted::create($this->permission);

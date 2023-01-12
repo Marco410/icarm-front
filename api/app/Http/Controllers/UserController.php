@@ -12,7 +12,7 @@ class UserController extends ApiController
 {
     public function index(Request $request)
     {
-        return $this->ok(User::all());
+        return $this->ok(User::with('iglesia')->get());
     }
 
     public function test(Request $request)

@@ -17,10 +17,16 @@ class User extends Authenticatable implements JWTSubject
 
 
     protected $fillable = [
-        'id','nombre', 'apellido_p', 'apellido_m','password' ,'fecha_nacimiento', 'pais', 'estado','ciudad','email','telefono'
+        'nombre', 'apellido_p', 'apellido_m','telefono','email','fecha_nacimiento', 
     ];
 
+    protected $hidden =[
+        'password'
+    ];
 
+    public function iglesia(){
+        return $this->hasOne(Iglesia::class);
+    }
     /**
      * Get the identifier that will be stored in the subject claim of the JWT.
      *

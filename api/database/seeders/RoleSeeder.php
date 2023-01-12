@@ -38,13 +38,19 @@ class RoleSeeder extends Seeder
             'nombre' => 'Admin',
             'email' => 'admin@gmail.com',
             'apellido_p' => 'ICARM',
+            'telefono' => '123',
+            'fecha_nacimiento' => '01/01/23',
             'password' =>hash('sha512', '1234567890'),
         ])->assignRole('Admin');
 
         User::create([
-            'nombre' => 'Lorena',
-            'email' => 'lorena@gmail.com',
+            'nombre' => 'Everth',
+            'email' => 'everthmarquez@hotmail.com',
             'apellido_p' => 'Perez',
+            'telefono' => '123',
+            'fecha_nacimiento' => '01/01/23',
+
+
             'password' =>hash('sha512', '1234567890'),
         ])->assignRole('Lider');
 
