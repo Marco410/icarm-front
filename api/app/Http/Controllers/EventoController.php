@@ -2,94 +2,189 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\UserContext;
-use App\Models\ViewUserRelationshipWithClient;
-use App\Models\User;
-use App\Models\Evento;
-use App\Models\EventoAsistencia;
-
 use Illuminate\Http\Request;
+use App\Models\Evento;
+use App\Models\Iglesia;
 
 use Intervention\Image\Facades\Image;
 use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Facades\DB;
 
-
-class EventoController extends ApiController
+class EventoController extends  ApiController
 {
-    public function lista_eventos(Request $request)
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function index()
     {
-
-        $user = $this->getUserLoggedIn();
-
-        $eventos['eventos'] = Evento::where('type','evento')->with('user')->get();
-
-        return $this->ok($eventos);
-
+        
+        return $this->ok(Evento::where('active', 1)->get());
     }
 
-    public function lista_grupos(Request $request)
+    /**
+     * Show the form for creating a new resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function createEvent(Request $request)
     {
+        
+        $errores = array();
+        $flagValidation = true;
+        $result = (object)[];
+   
+        $countEvent = DB::table('eventos')
+             ->select('id')
+             ->where('iglesia_id',$request->iglesia_id)
+             ->where('nombre',$request->nombre)
+             ->where('fecha_inicio',$request->fecha_inicio)
+             ->where('fecha_fin',$request->fecha_fin)->count();
 
-        $user = $this->getUserLoggedIn();
-
-        $eventos['eventos'] = Evento::where('type','grupo')->with('user')->get();
-
-        return $this->ok($eventos);
-
-    }
-
-    public function create(Request $request)
-    {
-
-        $user = $this->getUserLoggedIn();
-
-        $nameFoto = $this->storeFoto($request);
-
-        $evento = Evento::create([
-            'user_id' => $user->id,
-            'nombre' => $request->nombre,
-            'ubicacion' => $request->ubicacion,
-            'fecha' => $request->fecha,
-            'tipo_evento' => $request->tipo_evento,
-            'sobre_de' => $request->sobre_de,
-            'des_corta' => $request->des_corta,
-            'link_form' => $request->link_form,
-            'type' => $request->type,
-            'foto' => $nameFoto
-        ]);
-
-        return $this->ok($evento);
-    }
-
-    public function registrar_asistencia(Request $request)
-    {
-
-        $user = $this->getUserLoggedIn();
-
-        $asistencia = EventoAsistencia::where('user_id',$user->id)->where('evento_id',$request->evento_id)->first();
-
-        if($asistencia){
-            $evento['msj'] = "Ya registraste tu asistencia para este evento.";
-        }else{
-            $evento = EventoAsistencia::create([
-                'user_id' => $user->id,
-                'evento_id' => $request->evento_id
-            ]);
+        if($countEvent > 0)
+        {
+            $flagValidation = false;
+            array_push($errores,'El evento ya esta registrado');
         }
+
+        $iglesiaExist = DB::table('iglesias')
+            ->select('id')
+            ->where('id',$request->iglesia_id)->count();
+
+        if($iglesiaExist == 0) 
+        {
+            $flagValidation = false;
+            array_push($errores,'La iglesia que esta intentanto ingresar no existe');
+        }
+
+        if($request->fecha_inicio > $request ->fecha_fin)
+        {
+            $flagValidation = false;
+            array_push($errores,'La fecha de inicio es mayor que la final');
+        }
+        
+        if($flagValidation){
+
+            
+            $evento = Evento::create([
+                'iglesia_id' => $request->iglesia_id,
+                'nombre' => $request->nombre,
+                'fecha_inicio' => $request->fecha_inicio,
+                'fecha_fin' => $request->fecha_fin,
+                'descripcion' => $request->descripcion
+            ]);
+
+            
+                $nameFoto = $this->storeFoto($request,$evento->id);
+                $evento->imagen = $nameFoto;
+                $evento->save();
+            
+            
+            $result = (object) [
+                'type' => 'success',
+                'message' => 'Evento registrado con exito',
+                'data' => $evento
+            ];
+        }
+        else{
+            $result = (object) [
+                'type' => 'error',
+                'message' => 'Hay errores en el registro',
+                'data' => $errores
+            ];
+        }
+        return $this->ok(json_decode(json_encode($result)));
+    }
+
+    /**
+     * Store a newly created resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+    public function store(Request $request)
+    {
+        
+    }
+
+    /**
+     * Display the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function showEvents(Request $request)
+    {
+        return $this->ok(Evento::where('iglesia_id', $request->iglesia_id)->get());
+    }
+
+    /**
+     * Show the form for editing the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function edit($id)
+    {
+        //
+    }
+
+    /**
+     * Update the specified resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function update(Request $request)
+    {
+        //FALTA VALIDAR
+        
+        $imgeliminar = "";
+        $evento = Evento::find($request->id);
+        $imgeliminar = $evento->imagen;
+        $evento->iglesia_id = $request->iglesia_id;
+        $evento->nombre = $request->nombre;
+        $evento->fecha_inicio = $request->fecha_inicio;
+        $evento->fecha_fin = $request->fecha_fin;
+        $evento->descripcion = $request->descripcion;
+
+        $path_file_delete = public_path() . '/eventos/' . $request->id . "/".$imgeliminar;
+        unlink($path_file_delete);
+        $nameFoto = $this->storeFoto($request,$request->id);
+        $evento->imagen = $nameFoto;
+
+        $evento->save();
+        
+
         return $this->ok($evento);
     }
 
-    public function storeFoto($request)
+    /**
+     * Remove the specified resource from storage.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function destroy($id)
+    {
+        //
+    }
+
+    public function storeFoto($request,$id)
     {
 
-        if ($request->hasFile('foto')) {
-            $file = $request->file('foto');
+        if ($request->hasFile('imagen')) {
+            $file = $request->file('imagen');
             $name = $file->getClientOriginalName();
             $nameResult = $this->generateNameFile($name);
 
            /*  request()->file("imagen")->storeAs('public', 'marcas/' . $nameResult); */
 
-           $ruta = storage_path() .'/app/public/eventos/'.$request->bb_id;
+           //$ruta = storage_path() .'/app/public/eventos/'.$request->id;
+
+           $ruta = public_path() . '/eventos/' . $id;
 
             if (!file_exists($ruta)) {
                 mkdir($ruta, 0775, true);
@@ -97,7 +192,7 @@ class EventoController extends ApiController
 
            $path = $ruta ."/".$nameResult;
 
-            Image::make($request->file('foto'))
+            Image::make($request->file('imagen'))
                 ->resize(768,449)->save($path);
 
             return $nameResult;
@@ -125,30 +220,7 @@ class EventoController extends ApiController
         $cadena = strtr($cadena, utf8_decode($originales), $modificadas);
         return utf8_encode($cadena);
     }
-
-
-    public function get_peso(Request $request)
-    {
-        $user = $this->getUserLoggedIn();
-
-        $peso = RegistroCrecimiento::where('bb_id',$request->bb_id)->select('fecha_registro','peso')->get();
-        return $this->ok($peso);
-
-    }
-
-    public function get_talla(Request $request)
-    {
-        $user = $this->getUserLoggedIn();
-        $talla = RegistroCrecimiento::where('bb_id',$request->bb_id)->select('fecha_registro','talla')->get();
-        return $this->ok($talla);
-
-    }
-
-    public function get_toma_leche(Request $request)
-    {
-        $user = $this->getUserLoggedIn();
-        $toma_leche = RegistroTomaLeche::where('bb_id',$request->bb_id)->select('fecha_registro','tiempo')->get();
-        return $this->ok($toma_leche);
-
-    }
 }
+
+
+

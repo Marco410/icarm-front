@@ -26,13 +26,18 @@ Route::post('denuncia/crear', 'DenunciaController@create');
 */
 Route::get('test', 'UserController@index');
 
+Route::post('list-event','EventoController@showEvents');
+
 
 Route::group([
     'middleware' => [
         'verify.authorization.jwt'
         ]
     ], function () {
-        
+
+    Route::post('create-event','EventoController@createEvent');
+    Route::post('update-event','EventoController@update');
+    /*    
     Route::post('api-test', 'UserController@test');
 
     Route::get('users', 'UserController@index');
@@ -49,5 +54,5 @@ Route::group([
     Route::post('bebes/get-toma-leche', 'BebeController@get_toma_leche');
 
     Route::post('eventos/registrar-asistencia', 'EventoController@registrar_asistencia');
-    
+    */
 });

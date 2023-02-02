@@ -30,10 +30,10 @@ class CreateIglesiasTable extends Migration
             $table->string('facebook',255);
             $table->string('instagram',255);
             $table->string('youtube',255);
-            $table->string('pastores',255);
-            $table->string('horarios',255);
-            $table->string('mision',255);
-            $table->string('historia',255);
+            $table->text('pastores',255);
+            $table->text('horarios',255);
+            $table->text('mision',255);
+            $table->text('historia',255);
             //preguntar por vision
             $table->timestamps();
         });

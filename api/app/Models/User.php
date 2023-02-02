@@ -27,6 +27,10 @@ class User extends Authenticatable implements JWTSubject
     public function iglesia(){
         return $this->hasOne(Iglesia::class);
     }
+
+    public function evento(){
+        return $this->hasMany(Evento::class);
+    }
     /**
      * Get the identifier that will be stored in the subject claim of the JWT.
      *
