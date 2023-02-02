@@ -1,41 +1,8 @@
 /*
-Author       : Dreamguys
-Template Name: Truelysell - Bootstrap Html Template
+Author       : ICARM
 Version      : 1.0
 */
 
-/*============================
- [Table of CSS]
-
-1. General
-2. Bootstrap Classes
-3. Avatar
-4. Nav Tabs
-5. Loader
-6. Header
-7. Mobile Menu
-8. Home
-9. Service List
-10. Provider Dashboard
-11. Provider Wallet
-12. Chat
-13. Notifications
-14. Login
-15. Footer
-16. Provider Payment
-17. Service Details
-18. Provider Subscription
-19. Add Service
-20. Booking List
-21. My Service
-22. Provider Reviews
-23. About Us
-24. Contact Us
-25. FAQ
-26. Favourite Btn
-27. Responsive
-var(--hover)
-========================================*/
 
 :root {
 	--primary: #91857A;
@@ -1637,7 +1604,6 @@ html.menu-opened body {
 .search-input select,
 .search-input.line select {
 	height: 57px;
-	-webkit-appearance: none;
 	padding: 0px 40px 0px 60px;
 	border: 0;
 }
@@ -1653,12 +1619,6 @@ html.menu-opened body {
 	border: 1px solid var(--primary);
 }
 
-.search-box input:hover,
-.search-box input:focus,
-.search-box .form-control:hover,
-.search-box .form-control:focus {
-	/* background-color: #fff !important; */
-}
 
 .search-box form {
 	float: left;
@@ -1689,10 +1649,6 @@ html.menu-opened body {
 
 .search-input {
 	width: 28%;
-}
-
-.search-input.line {
-	/* width: 47%; */
 }
 
 .search-input input,
@@ -5413,9 +5369,6 @@ div.dataTables_wrapper div.dataTables_filter input {
 }
 
 @media only screen and (max-width: 991.98px) {
-	.sidebar-overlay.opened {
-		/* display: block; */
-	}
 
 	.main-nav {
 		padding: 0;

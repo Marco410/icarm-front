@@ -194,13 +194,7 @@ Route::Group(['prefix' => 'admin'], function () {
 
     Route::post('/bautizar', 'AdminController@bautizar')->name('bautizar');
 
-    Route::get('/alumnos', 'AdminController@alumnos')->name('alumnos');
-    Route::get('/alumnos-añadir', 'AdminController@alumnos_add')->name('alumnos.add');
-    Route::post('/alumno-create', 'AdminController@alumno_create')->name('alumno.create');
-    Route::post('/alumnos-asistencia', 'AdminController@alumnos_asistencia')->name('alumnos.asistencia');
-    Route::post('/alumno-editar', 'AdminController@alumno_editar')->name('alumno.editar');
-    Route::get('/alumno-ver', 'AdminController@alumno_ver')->name('alumno.ver');
-    Route::get('/alumno-asistencia-movil', 'AdminController@alumnos_asistencia_movil')->name('alumno.asistencia.movil');
+    Route::get('/eventos', 'Admin\EventoController@index')->name('eventos');
 
 
 
