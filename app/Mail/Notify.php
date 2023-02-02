@@ -11,7 +11,7 @@ class Notify extends Mailable
 {
     use Queueable, SerializesModels;
 
-    public $subject = "Notificación Administración Autonavega";
+    public $subject = "Notificación Administración A&R";
     public $msj;
 
 

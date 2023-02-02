@@ -80,7 +80,7 @@
                                 <i class="far fa-envelope"></i>
                                 <div class="contact-data">
                                     <h4>Email</h4>
-                                    <p> <a href="mailto:info@autonavega.com">contacto@autonavega.com</a></p>
+                                    <p> <a href="mailto:info@amoryrestauracion.com">contacto@amoryrestauracion.com</a></p>
                                 </div>
                             </div>
                         </div>
@@ -91,7 +91,7 @@
     </section>
     <div class="map-grid">
         {{-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d250646.68136328788!2d76.82714556974858!3d11.012014523817232!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba859af2f971cb5%3A0x2fc1c81e183ed282!2sCoimbatore%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1596472179383!5m2!1sen!2sin" allowfullscreen="" aria-hidden="false" tabindex="0" class="contact-map"></iframe> --}}
-        <img src="{{  asset("/assets/img/banner.jpg")}}" alt="">
+        <img src="{{ asset('/assets/img/banner.jpg') }}" alt="">
     </div>
     </div>
 @endsection

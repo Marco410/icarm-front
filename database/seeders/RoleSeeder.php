@@ -37,7 +37,7 @@ class RoleSeeder extends Seeder
         User::create([
             'name' => 'Admin',
             'email' => 'admin@gmail.com',
-            'apellido_p' => 'Autonavega',
+            'apellido_p' => 'A&R',
             'password' =>bcrypt('1234567890'),
         ])->assignRole('Admin');
 
