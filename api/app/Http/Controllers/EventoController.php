@@ -20,7 +20,7 @@ class EventoController extends  ApiController
     public function index()
     {
         
-        return $this->ok(Evento::where('active', 1)->get());
+        return $this->ok(Evento::get());
     }
 
     /**

@@ -11,7 +11,7 @@
                         <h3>Eventos</h3>
                     </div>
                     <div class="col-6">
-                        <a style="float: right" class="btn btn-md btn-primary text-white" href="#"> <i
+                        <a style="float: right" class="btn btn-sm btn-primary text-white" href="#">Nuevo evento <i
                                 class="fas fa-plus"></i> </a>
                     </div>
                 </div>
@@ -34,7 +34,7 @@
                     <div class="card">
                         <div class="card-body">
                             <div class="table-responsive">
-                                <table id="tabla-users" class="table table-hover table-center mb-0 ">
+                                <table id="main-table" class="table table-hover table-center mb-0 ">
                                     <thead>
                                         <tr>
                                             <th>#</th>
@@ -46,6 +46,12 @@
                                         </tr>
                                     </thead>
                                     <tbody>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
 
                                     </tbody>
                                 </table>

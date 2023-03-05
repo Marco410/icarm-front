@@ -26,7 +26,7 @@ Route::post('denuncia/crear', 'DenunciaController@create');
 */
 Route::get('test', 'UserController@index');
 
-Route::post('list-event','EventoController@showEvents');
+Route::get('list-event','EventoController@showEvents');
 
 
 Route::group([
