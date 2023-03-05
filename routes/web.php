@@ -13,6 +13,8 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/aliento', 'Aliento\AlientoController@index')->name('aliento');
+
 Route::get('/', 'IndexController@index')->name('index');
 Route::get('/matrimonios', 'IndexController@matrimonios')->name('index.matrimonios');
 Route::get('/mujeres', 'IndexController@mujeres')->name('index.mujeres');

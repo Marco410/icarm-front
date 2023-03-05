@@ -14,15 +14,16 @@
 @endif
 <div class="main-wrapper">
     @if (Route::is([
-        'index',
-        'index.matrimonios',
-        'index.mujeres',
-        'index.hombres',
-        'index.kids',
-        'index.jovenes',
-        'index.alabanza',
-        'errors.build',
-    ]) || $exception)
+            'index',
+            'index.matrimonios',
+            'index.mujeres',
+            'index.hombres',
+            'index.kids',
+            'index.jovenes',
+            'index.alabanza',
+            'aliento',
+            'errors.build',
+        ]) || $exception)
         <!-- Header -->
         <header class="header">
             <div class="header-fixed">
