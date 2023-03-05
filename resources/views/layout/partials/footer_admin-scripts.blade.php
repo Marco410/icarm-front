@@ -46,6 +46,3 @@
 @if (Route::is(['eventos']))
     <script src="{{ asset('assets_admin/js/view_controllers/events_vs.js') }}"></script>
 @endif
-
-
-{{-- <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC3cOZ4msHc0Ty1zVmpkJ96QRmxEdlzQkk&callback=initMap&libraries=places&v=weekly&language=es" ></script> --}}
