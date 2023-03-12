@@ -73,7 +73,6 @@
                                     <li class=""><a href="{{ route('index.alabanza') }}">Alabanza</a></li>
                                     <li class=""><a href="{{ route('errors.build') }}">Intercesión</a></li>
                                     <li class=""><a href="{{ route('errors.build') }}">Consolidación</a></li>
-                                    <li class=""><a href="{{ route('errors.build') }}">Sport Ministry</a></li>
                                 </ul>
                             </li>
                             <li class="has-submenu {{ Request::is('contacto') ? 'active' : '' }}">

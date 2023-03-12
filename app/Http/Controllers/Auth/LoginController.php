@@ -106,18 +106,15 @@ class LoginController extends Controller
             if($user->password == hash('sha512', $request->password))
             {
                 $user->roles;
-               /*  if($user->verify == 0){
-                    return redirect()->route('index')->with('errorL','Necesitas verificar tu correo electrónico. Checa tu bandeja de entrada o spam. Si no, da <a href="'.route('admin.login.ree.send.email',$user->email).'"> clic aquí </a> para reenviar el correo.');
-                } */
-                //Auth::loginUsingId($user->id);
+                Auth::loginUsingId($user->id);
 
-                return $user;
+                return auth()->user();
 
-               /*  if(auth()->user()->roles[0]->name == "Admin"){
+                if(auth()->user()->roles[0]->name == "Admin"){
                     return redirect()->route('dashboard');
                 }else{
                     return back();
-                } */
+                }
 
             }else{
                 return redirect()->route('index')->with('errorL','La contraseña es incorrecta');
@@ -132,6 +129,7 @@ class LoginController extends Controller
         $admin = true;
 
         if(auth()->user()){
+            return auth()->user();
             if(auth()->user()->roles[0]->name == "Admin"){
                 $admin = true;
             }else{
