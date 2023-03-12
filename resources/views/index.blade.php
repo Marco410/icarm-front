@@ -8,8 +8,8 @@
         </video>
         <div class="content">
             <h1 data-aos="fade-up">Amor & Restauración</h1>
-            <a data-aos="fade-up" href="#">Donaciones</a>
-            <a data-aos="fade-right" href="#ubicaciones">Ubicaciones</a>
+            <a data-aos="fade-right" href="#">Donaciones</a>
+            <a data-aos="fade-up" href="#ubicaciones">Ubicaciones</a>
             <a data-aos="fade-left" href="#contacto">Contácto</a>
         </div>
     </section>
@@ -148,6 +148,30 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="heading">
+                                <h2>Escucha nuestro Podcast</h2>
+                                <span>Explora nuestros episodios</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="viewall">
+                                <span>Podcast</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" data-aos="fade-up">
+                        <iframe title="Pastor Pedro Cantu Podcast" allowtransparency="true" height="315"
+                            width="100%" style="border: none; min-width: min(100%, 430px);" scrolling="no"
+                            data-name="pb-iframe-player"
+                            src="https://www.podbean.com/player-v2/?i=bnxay-f457dc-pbblog-playlist&share=1&download=1&rtl=0&fonts=Arial&skin=1&font-color=&logo_link=episode_page&order=episodic&limit=10&filter=all&ss=a713390a017602015775e868a2cf26b0&btn-skin=1b1b1b&size=315"
+                            allowfullscreen=""></iframe>
                     </div>
                 </div>
             </div>

@@ -58,7 +58,7 @@
                             <li class="{{ Request::is('/') ? 'active' : '' }}">
                                 <a href="{{ route('index') }}">Inicio</a>
                             </li>
-                            <li class="{{ Request::is('agencias-automotrices') ? 'active' : '' }}">
+                            <li>
                                 <a href="#eventos">Eventos</a>
                             </li>
 

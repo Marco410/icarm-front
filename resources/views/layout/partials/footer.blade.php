@@ -47,19 +47,19 @@
                                 <a href="{{ route('index') }}">Inicio</a>
                             </li>
                             <li>
-                                <a href="{{ route('agencias') }}">Eventos</a>
+                                <a href="#eventos">Eventos</a>
                             </li>
                             <li>
-                                <a href="{{ route('user.dashboard') }}">Ministerios</a>
+                                <a href="{{ route('errors.build') }}">Ministerios</a>
                             </li>
                             <li>
-                                <a href="{{ route('user.dashboard') }}">Campus</a>
+                                <a href="{{ route('errors.build') }}">Campus</a>
                             </li>
                             <li>
-                                <a href="{{ route('user.dashboard') }}">Contáctanos</a>
+                                <a href="#contacto">Contáctanos</a>
                             </li>
                             <li>
-                                <a href="{{ route('user.dashboard') }}">Blog</a>
+                                <a href="{{ route('errors.build') }}">Blog</a>
                             </li>
                         </ul>
                     </div>
