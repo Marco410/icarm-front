@@ -487,13 +487,13 @@
         </div>
     </section>
     <!-- /Descarga -->
-    <!--- Covertura --->
-    <section class="covertura">
+    <!--- Cobertura --->
+    <section class="cobertura">
         <div class="container">
             <div class="row">
                 <div class="col-sm-5">
                     <div class="sticky-top mt-4">
-                        <h3>Covertura</h3>
+                        <h3>Cobertura</h3>
                         <p>Dios tiene un plan, una estructura y una estrategia para que el cuerpo de Cristo, la Iglesia,
                             funcione, se edifique, crezca con sentido de destino y cumpla el plan en la tierra a través de:
                             Apóstoles, profetas, evangelistas, pastores y maestros.
@@ -502,13 +502,13 @@
                     </div>
                 </div>
                 <div class="col-sm-7 img-back">
-                    <img data-aos="fade-down" src="{{ asset('assets/img/index/covertura.png') }}" alt="Donaciones ICARM">
+                    <img data-aos="fade-down" src="{{ asset('assets/img/index/cobertura.png') }}" alt="Donaciones ICARM">
                 </div>
             </div>
         </div>
 
     </section>
-    <!--- /Covertura --->
+    <!--- /Cobertura --->
     <!--- Contactanos --->
     <section class="contactanos" id="contacto">
         <div class="container">

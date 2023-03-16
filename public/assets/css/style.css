@@ -2233,21 +2233,21 @@ section.download-app img.android {
 }
 
 
-section.covertura {
+section.cobertura {
 	padding-top: 105px;
 	padding-bottom: 105px;
 }
 
-section.covertura .sticky-top {
+section.cobertura .sticky-top {
 	top: 120px;
 	z-index: 1;
 }
 
-section.covertura .sticky-top h3 {
+section.cobertura .sticky-top h3 {
 	font-size: 44px;
 }
 
-section.covertura .sticky-top a {
+section.cobertura .sticky-top a {
 	border: 2px solid var(--primary);
 	padding: 10px 20px;
 	border-radius: 15px;
@@ -2257,12 +2257,12 @@ section.covertura .sticky-top a {
 	font-size: 14px;
 }
 
-section.covertura .sticky-top a:hover {
+section.cobertura .sticky-top a:hover {
 	color: var(--primary);
 	border: 2px solid var(--white);
 }
 
-section.covertura .img-back img {
+section.cobertura .img-back img {
 	width: 90%;
 	border-radius: 45px;
 	box-shadow: 0 5px 20px rgb(0 0 0 / 30%);
