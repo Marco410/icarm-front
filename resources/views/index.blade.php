@@ -432,13 +432,19 @@
                                 transferncia ya que sobrenaturalmente la iglesia Amor y Restauracion compro la propiedad
                                 ubicada en el 1610 Campbel Rd. Houston Texas 77055 a Spring Branch First Baptist Church una
                                 propiedad con casi 6 acres de tierra y 65,000 pies cuadrados de construccion contando con un
-                                hermoso Santuario con 728 butacas y con capacidad para expanderse a 350 mas y ademas con 70
-                                aulas educativas y un hermoso Gimnasio.
+                                hermoso Santuario con 728 butacas y ademas con 70 aulas educativas y un hermoso Gimnasio en
+                                esta propiedad estuvimos operando hasta el 1 de Enero del 2023.
                             <p>
+                            <p data-aos="fade-down">El 28 de diciembre del 2022 se vendió de manera sobrenatural la
+                                propiedad de la Campbell para comprar el 30 de diciembre las nuevas instalaciones de nuestra
+                                iglesia que hoy es la nueva cedé en el 10707 Haddington Dr Houston Texas 77043
+                                Que cuenta con 7 acres de tierra y 2 edificios con aproximadamente 64,000 cuadrados de
+                                construcción y donde se está preparando un santuario para 1500 personas.
+                            </p>
                             <p data-aos="fade-down">Creemos que la unidad y el compromiso de las personas que estamos
                                 trabajando en este equipo ministerial nos llevarán a alcanzar a Houston y los EUA para
                                 Cristo, junto con aquellos pastores e iglesias que son parte del Cuerpo de Cristo aquí en
-                                esta nación.</< /p>
+                                esta nación.</p>
                         </div>
                         <div class="col-sm-5">
                             <div class="sticky-top mt-4 mb-4">
