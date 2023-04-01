@@ -38,11 +38,10 @@
                                 <div class="owl-stage"
                                     style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s; width: 10200px;">
                                     <div class="owl-item active" style="width: 270px; margin-right: 30px;">
-                                        <a
-                                            href="https://static.wixstatic.com/media/bf53c1_5e86b347672b41d0943027f8ee770a6f~mv2.jpg/v1/fill/w_734,h_958,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/bf53c1_5e86b347672b41d0943027f8ee770a6f~mv2.jpg">
+                                        <a href="{{ asset('assets/img/index/iglesia/central.png') }}">
                                             <div class="cate-widget">
                                                 <img class="img-fluid serv-img" alt="Marca Alfa Romeo"
-                                                    src="https://static.wixstatic.com/media/bf53c1_5e86b347672b41d0943027f8ee770a6f~mv2.jpg/v1/fill/w_734,h_958,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/bf53c1_5e86b347672b41d0943027f8ee770a6f~mv2.jpg">
+                                                    src="{{ asset('assets/img/index/iglesia/central.png') }}">
                                                 <div class="cate-title">
                                                     <h3><span><i class="fas fa-circle"></i> A&R Central</span></h3>
                                                 </div>
@@ -56,11 +55,10 @@
                                         </a>
                                     </div>
                                     <div class="owl-item active" style="width: 270px; margin-right: 30px;">
-                                        <a
-                                            href="https://static.wixstatic.com/media/bf53c1_5e86b347672b41d0943027f8ee770a6f~mv2.jpg/v1/fill/w_734,h_958,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/bf53c1_5e86b347672b41d0943027f8ee770a6f~mv2.jpg">
+                                        <a href="{{ asset('assets/img/index/iglesia/central.png') }}">
                                             <div class="cate-widget">
                                                 <img class="img-fluid serv-img" alt="Marca Audi"
-                                                    src="https://static.wixstatic.com/media/bf53c1_5e86b347672b41d0943027f8ee770a6f~mv2.jpg/v1/fill/w_734,h_958,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/bf53c1_5e86b347672b41d0943027f8ee770a6f~mv2.jpg">
+                                                    src="{{ asset('assets/img/index/iglesia/central.png') }}">
                                                 <div class="cate-title">
                                                     <h3><span><i class="fas fa-circle"></i> A&R Central</span></h3>
                                                 </div>
@@ -92,11 +90,10 @@
                                         </a>
                                     </div>
                                     <div class="owl-item active" style="width: 270px; margin-right: 30px;">
-                                        <a
-                                            href="https://static.wixstatic.com/media/bf53c1_5e86b347672b41d0943027f8ee770a6f~mv2.jpg/v1/fill/w_734,h_958,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/bf53c1_5e86b347672b41d0943027f8ee770a6f~mv2.jpg">
+                                        <a href="{{ asset('assets/img/index/iglesia/central.png') }}">
                                             <div class="cate-widget">
                                                 <img class="img-fluid serv-img" alt="Marca BUICK-GMC-Cadillac"
-                                                    src="https://static.wixstatic.com/media/bf53c1_5e86b347672b41d0943027f8ee770a6f~mv2.jpg/v1/fill/w_734,h_958,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/bf53c1_5e86b347672b41d0943027f8ee770a6f~mv2.jpg">
+                                                    src="{{ asset('assets/img/index/iglesia/central.png') }}">
                                                 <div class="cate-title">
                                                     <h3><span><i class="fas fa-circle"></i> A&R Central</span></h3>
                                                 </div>
@@ -128,11 +125,10 @@
                                         </a>
                                     </div>
                                     <div class="owl-item" style="width: 270px; margin-right: 30px;">
-                                        <a
-                                            href="https://static.wixstatic.com/media/bf53c1_5e86b347672b41d0943027f8ee770a6f~mv2.jpg/v1/fill/w_734,h_958,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/bf53c1_5e86b347672b41d0943027f8ee770a6f~mv2.jpg">
+                                        <a href="{{ asset('assets/img/index/iglesia/central.png') }}">
                                             <div class="cate-widget">
                                                 <img class="img-fluid serv-img" alt="Marca Chevrolet"
-                                                    src="https://static.wixstatic.com/media/bf53c1_5e86b347672b41d0943027f8ee770a6f~mv2.jpg/v1/fill/w_734,h_958,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/bf53c1_5e86b347672b41d0943027f8ee770a6f~mv2.jpg">
+                                                    src="{{ asset('assets/img/index/iglesia/central.png') }}">
                                                 <div class="cate-title">
                                                     <h3><span><i class="fas fa-circle"></i> A&R Central</span></h3>
                                                 </div>

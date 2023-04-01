@@ -11,7 +11,7 @@
                     <div class="footer-widget">
                         <h2 class="footer-title">Campus Central</h2>
                         <div class="footer-contact-info">
-                            <small>1610 Campbell Rd Houston <br> TX. 77055 </small> <br>
+                            <small>10707 Haddington Dr<br> Houston TX. 77043 </small> <br>
                             <small class="element">Miércoles 7:30PM</small> <br>
                             <small class="des">Reunión General</small> <br>
                             <small class="element">Viernes 8:00PM</small> <br>
