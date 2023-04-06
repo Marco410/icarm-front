@@ -16,7 +16,7 @@
     {{-- Eventos section --}}
     <section class="popular-services" id="eventos">
         <div class="container">
-            <div class="row">
+            <div class="row" style="display: none;">
                 <div class="col-lg-12">
                     <div class="row">
                         <div class="col-md-6">
@@ -369,7 +369,7 @@
     <!-- Mapas -->
     <section class="map-section" id="ubicaciones">
         <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1772120.9691359256!2d-96.10563018172124!3d29.83040563736779!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640c45a480d0599%3A0x4863f76bb2d998be!2s1610%20Campbell%20Rd%2C%20Houston%2C%20TX%2077055%2C%20EE.%20UU.!5e0!3m2!1ses-419!2smx!4v1669260071027!5m2!1ses-419!2smx&"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1267.260141429269!2d-95.5606772995278!3d29.799118900600217!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640c4cd45ca6bf7%3A0x4915a605e36217c1!2s10707%20Haddington%20Dr%2C%20Houston%2C%20TX%2077043%2C%20EE.%20UU.!5e0!3m2!1ses-419!2smx!4v1680749350196!5m2!1ses-419!2smx"
             width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
