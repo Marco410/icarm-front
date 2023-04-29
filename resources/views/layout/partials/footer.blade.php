@@ -87,12 +87,10 @@
 
                             </ul>
                         </div>
-                        {{-- <div class="subscribe-form">
-								<input type="email" class="form-control" placeholder="Enter your email">
-								<button type="submit" class="btn footer-btn">
-									<i class="fas fa-paper-plane"></i>
-								</button>
-							</div> --}}
+                        <div class="subscribe-form">
+                            <a style="color:var(--primary);" href="tel:+1 713-932-1800">
+                                <i class="fas fa-phone"></i> +1 713-932-1800</a>
+                        </div>
                     </div>
                     <!-- /Footer Widget -->
                 </div>
@@ -112,11 +110,9 @@
                             </p>
                         </div>
                         <div class="copyright-img">
-                            <img src="{{ asset('assets/img/index/mtm.png') }}" class="img-fluid"
-                                alt="Ministerios de Transformación Mundial">
-                            <a href="{{ route('aliento') }}">
-                                <img src="{{ asset('assets/img/index/aliento.png') }}" class="img-fluid"
-                                    alt="Aliento Radio">
+                            <a target="_blank" href="https://eric3r1c.wixsite.com/mtm-">
+                                <img src="{{ asset('assets/img/index/mtm.png') }}" class="img-fluid"
+                                    alt="Ministerios de Transformación Mundial">
                             </a>
                             <img src="{{ asset('assets/img/index/institute.png') }}" class="img-fluid" alt="Instituto">
                         </div>

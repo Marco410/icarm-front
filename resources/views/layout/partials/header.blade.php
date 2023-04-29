@@ -21,6 +21,7 @@
             'index.kids',
             'index.jovenes',
             'index.alabanza',
+            'index.estrategia',
             'aliento',
             'errors.build',
         ]) || $exception)
@@ -145,6 +146,23 @@
             </li>
         </ul>
     @endauth
+    <div class="social-icon">
+        <ul>
+            <li>
+                <a href="https://www.facebook.com/amoryrestauracion/" target="_blank"><i class="fab fa-facebook-f"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/amor.y.restauracion/" target="_blank"><i class="fab fa-instagram"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/channel/UCDT3-Oijp2N7Bwn3DlZHPJw" target="_blank"><i
+                        class="fab fa-youtube"></i> </a>
+            </li>
+
+        </ul>
+    </div>
     </nav>
     </div>
     </header>

@@ -23,6 +23,8 @@ Route::get('/kids', 'IndexController@kids')->name('index.kids');
 Route::get('/jovenes', 'IndexController@jovenes')->name('index.jovenes');
 Route::get('/alabanza', 'IndexController@alabanza')->name('index.alabanza');
 
+Route::get('/estrategia', 'IndexController@estrategia')->name('index.estrategia');
+
 Route::get('/error-build', 'IndexController@error_build')->name('errors.build');
 
 

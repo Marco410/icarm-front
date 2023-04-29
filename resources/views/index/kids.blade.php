@@ -61,14 +61,6 @@
                                 </a>
                             </div>
                             <div class="owl-item" style="margin-right: 10px;">
-                                <a href="{{ asset('assets/img/index/kids/carousel/2.png') }}">
-                                    <div class="cate-widget">
-                                        <img class="img-fluid serv-img" alt="Carousel kids"
-                                            src="{{ asset('assets/img/index/kids/carousel/2.png') }}">
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="owl-item" style="margin-right: 10px;">
                                 <a href="{{ asset('assets/img/index/kids/carousel/3.png') }}">
                                     <div class="cate-widget">
                                         <img class="img-fluid serv-img" alt="Carousel kids"

@@ -1,5 +1,5 @@
 /*
-Author       : Dreamguys
+Author       : Marco Castañeda
 Template Name: Truelysell - Service Marketplace
 Version      : 1.0
 */
@@ -349,8 +349,14 @@ Version      : 1.0
 		});
 	})();
 
-	$(window).on('load', function () {
+	/* 	$(window).on('load', function () {
+	}); */
+
+	setTimeout(dismissLoader(), 30000);
+
+	function dismissLoader() {
 		$('.page-loading').fadeOut();
-	});
+		console.log("SDSASD");
+	}
 
 })(jQuery);

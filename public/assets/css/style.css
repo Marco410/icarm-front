@@ -3820,6 +3820,43 @@ section.contactanos textarea {
 	color: var(--primary);
 }
 
+nav .social-icon ul {
+	display: -webkit-inline-box;
+	display: -ms-inline-flexbox;
+	display: inline-flex;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	margin-left: 20px;
+}
+
+nav .social-icon ul li {
+	margin-right: 10px;
+}
+
+nav .social-icon ul li:last-child {
+	margin-right: 0;
+}
+
+nav .social-icon ul li a {
+	color: var(--white);
+	display: -webkit-inline-box;
+	display: -ms-inline-flexbox;
+	display: inline-flex;
+	font-size: 15px;
+	transition: all 0.4s ease 0s;
+	width: 20px;
+	height: 20px;
+	border-radius: 14px;
+	justify-content: center;
+	align-items: center;
+}
+
+nav .social-icon ul li a:hover {
+	background-color: rgba(255, 0, 128, 0.05);
+	color: var(--primary);
+}
+
 .policy-menu {
 	font-size: 14px;
 	margin: 0;

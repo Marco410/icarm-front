@@ -40,6 +40,10 @@ class IndexController extends Controller
         return view('index.alabanza');
     }
 
+    public function estrategia(){
+        return view('index.estrategia');
+    }
+
     public function error_build(){
         return view('errors.build');
     }
