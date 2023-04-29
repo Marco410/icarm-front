@@ -468,7 +468,8 @@
                             alrededor del mundo.
                         </p>
                         <a class="btn" data-aos="fade-up" target="_blank"
-                            href="https://pushpay.com/g/amoryrestauracion?src=hpp">Realizar Donación</a>
+                            href="https://pushpay.com/g/amoryrestauracion?fnd=-pn9NDeQptfw-DoqbI0iVg&r=No&lang=es&src=qrcode">Realizar
+                            Donación</a>
                     </div>
                 </div>
                 <div class="col-sm-8 img-back">
