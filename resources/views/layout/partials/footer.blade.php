@@ -114,7 +114,10 @@
                                 <img src="{{ asset('assets/img/index/mtm.png') }}" class="img-fluid"
                                     alt="Ministerios de Transformación Mundial">
                             </a>
-                            <img src="{{ asset('assets/img/index/institute.png') }}" class="img-fluid" alt="Instituto">
+                            <a target="_blank" href="https://alientoradiow.wixsite.com/restorationinstitute">
+                                <img src="{{ asset('assets/img/index/institute.png') }}" class="img-fluid"
+                                    alt="Instituto">
+                            </a>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-6">
