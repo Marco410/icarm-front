@@ -523,13 +523,20 @@
             <div class="row">
                 <div class="col-sm-6 offset-sm-3 text-center">
                     <h3 class="mb-4" data-aos="fade-down">Contáctanos</h3>
-                    <input data-aos="fade-down" type="text" class="form-control" placeholder="Nombre">
-                    <input data-aos="fade-down" type="text" class="form-control" placeholder="Asunto">
-                    <input data-aos="fade-down" type="text" class="form-control" placeholder="Email">
-                    <input data-aos="fade-down" type="text" class="form-control" placeholder="Teléfono">
-                    <textarea data-aos="fade-down" class="form-control" name="mensaje" placeholder="Mensaje" id=""
-                        cols="30" rows="10"></textarea>
-                    <a class="btn" data-aos="fade-up" href="#">Más información</a>
+                    <form method="POST" action="{{ route('send.contacto') }}">
+                        {{ csrf_field() }}
+                        <input data-aos="fade-down" type="text" class="form-control" required name="name"
+                            placeholder="Nombre">
+                        <input data-aos="fade-down" type="text" class="form-control" required name="asunto"
+                            placeholder="Asunto">
+                        <input data-aos="fade-down" type="email" class="form-control" required name="email"
+                            placeholder="Email">
+                        <input data-aos="fade-down" type="text" class="form-control" required name="telefono"
+                            placeholder="Teléfono">
+                        <textarea data-aos="fade-down" class="form-control" name="mensaje" name="msj" required placeholder="Mensaje"
+                            id="" cols="30" rows="10"></textarea>
+                        <button type="submit" class="btn btn-sm btn-primary" data-aos="fade-up">Enviar Mensaje</button>
+                    </form>
                 </div>
             </div>
         </div>

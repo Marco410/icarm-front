@@ -3,10 +3,10 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Encontrado;
 
-use App\Notifications\ContactoNoti;
-use Illuminate\Notifications\DatabaseNotification;
+use Illuminate\Support\Facades\Mail;
+
+use App\Mail\Contacto;
 
 class IndexController extends Controller
 {
@@ -40,12 +40,31 @@ class IndexController extends Controller
         return view('index.alabanza');
     }
 
+    public function contacto(){
+        return view('index.contacto');
+    }
+
     public function estrategia(){
         return view('index.estrategia');
     }
 
     public function error_build(){
         return view('errors.build');
+    }
+
+    public function send_contact(Request $request){
+
+       /*  $datosContacto = request()->validate([
+            'nombre'   => 'required',
+            'asunto'   => 'required',
+            'telefono'   => 'required',
+            'msj'   => 'required',
+            'email'   => 'required|email'
+        ]); */
+
+        return redirect('contacto');
+
+        //Mail::to('marco_pascual410@hotmail.com')->send(new UserRegister($user));
     }
 
 

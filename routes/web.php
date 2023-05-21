@@ -22,8 +22,11 @@ Route::get('/hombres', 'IndexController@hombres')->name('index.hombres');
 Route::get('/kids', 'IndexController@kids')->name('index.kids');
 Route::get('/jovenes', 'IndexController@jovenes')->name('index.jovenes');
 Route::get('/alabanza', 'IndexController@alabanza')->name('index.alabanza');
+Route::get('/contacto', 'IndexController@contacto')->name('index.contacto');
 
 Route::get('/estrategia', 'IndexController@estrategia')->name('index.estrategia');
+
+Route::post('/send-contact', 'IndexController@send_contact')->name('send.contacto');
 
 Route::get('/error-build', 'IndexController@error_build')->name('errors.build');
 

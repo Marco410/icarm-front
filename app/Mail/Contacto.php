@@ -7,23 +7,22 @@ use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 
-class CitaAccept extends Mailable
+class Contacto extends Mailable
 {
     use Queueable, SerializesModels;
 
-    public $subject = "Tu cita fue aceptada. AutoNavega";
-    public $cita;
-    public $agencia;
+    public $subject = "Mensaje de Contacto";
+    public $msj;
 
     /**
      * Create a new message instance.
      *
      * @return void
      */
-    public function __construct($cita,$agencia)
+    public function __construct($msj)
     {
-        $this->cita = $cita;
-        $this->agencia = $agencia;
+        $this->msj = $msj;
+        
     }
 
     /**
@@ -33,6 +32,6 @@ class CitaAccept extends Mailable
      */
     public function build()
     {
-        return $this->view('emails.cita-accept');
+        return $this->view('emails.contacto');
     }
 }

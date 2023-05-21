@@ -15,6 +15,8 @@
 <!-- Owl JS -->
 <script src="{{ asset('assets/plugins/owlcarousel/owl.carousel.min.js') }}"></script>
 
+<script src="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.js"></script>
+
 <!-- Custom JS -->
 <script src="{{ asset('assets/js/owl2row.js') }}"></script>
 <script src="{{ asset('assets/js/script.js') }}"></script>

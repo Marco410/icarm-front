@@ -3,7 +3,6 @@
 <!-- CSRF Token -->
 <meta name="csrf-token" content="{{ csrf_token() }}">
 <title>{{ $page }} | ICARM Admin</title>
-{{-- <title>{{ $page }} | AutoNavega Admin</title> --}}
 <!-- Favicons -->
 
 <link rel="shortcut icon" href="{{ asset('assets/img/favicon.png') }}">
@@ -35,6 +34,6 @@
 <link rel="stylesheet" href="{{ asset('assets_admin/css/papelera.css') }}">
 <!-- jQuery -->
 <script src="{{ asset('assets/js/jquery-3.5.0.min.js') }}"></script>
-{{-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.css"> --}}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.css">
 
 <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>

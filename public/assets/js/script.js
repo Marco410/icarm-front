@@ -356,7 +356,6 @@ Version      : 1.0
 
 	function dismissLoader() {
 		$('.page-loading').fadeOut();
-		console.log("SDSASD");
 	}
 
 })(jQuery);
