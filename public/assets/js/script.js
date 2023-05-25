@@ -260,6 +260,29 @@ Version      : 1.0
 		})
 	}
 
+	if ($('.oracion-carousel').length > 0) {
+		$('.oracion-carousel').owlCarousel({
+			loop: true,
+			center: true,
+			autoplay: true,
+			autoplayTimeout: 6000,
+			dots: true,
+			navText: ["<i class='  fa fa-chevron-left'></i>", "<i class=' fa fa-chevron-right'></i>"],
+			responsiveClass: true,
+			responsive: {
+				0: {
+					items: 1
+				},
+				600: {
+					items: 1
+				},
+				1000: {
+					items: 1
+				}
+			}
+		})
+	}
+
 	// Membership Add More
 
 	$(".membership-info").on('click', '.trash', function () {

@@ -23,7 +23,10 @@
             'index.alabanza',
             'index.estrategia',
             'aliento',
+            'index.media',
             'errors.build',
+            'term-condition',
+            'privacy-policy',
         ]) || $exception)
         <!-- Header -->
         <header class="header">
@@ -88,6 +91,13 @@
                             </li>
                             <li class="{{ Request::is('contacto') ? 'active' : '' }}">
                                 <a href="{{ route('errors.build') }}">Blog</a>
+                            </li>
+                            <li class="{{ Request::is('dar') ? 'active' : '' }}">
+                                <a target="_blank"
+                                    href="https://pushpay.com/g/amoryrestauracion?fnd=-pn9NDeQptfw-DoqbI0iVg&r=No&lang=es&src=qrcode">Dar</a>
+                            </li>
+                            <li class="{{ Request::is('media') ? 'active' : '' }}">
+                                <a href="{{ route('index.media') }}">Media</a>
                             </li>
                             @auth
                                 @if (auth()->user()->hasRole('Dealer'))

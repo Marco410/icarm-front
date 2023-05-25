@@ -265,37 +265,33 @@
                     </div>
                     <div class="row">
                         <div class="col-sm-7 p-4">
-                            <p data-aos="fade-down">La tercer Semana del mes de febrero de 1991, el Hno. Pedro Cantú Pastor
-                                y apóstol de La Iglesia Cristiana Amor y Restauración, celebró con su esposa Leticia y sus
-                                Hijas Rocío, Perla y Sarahí Cantú su primer servicio aproximadamente con unos 16 hermanos,
-                                en un local situado en el 1106 de la calle Witte RD. 3 años después nos mudamos al 1131 de
-                                la misma calle Witte, y en el mes de enero del 2001, al experimentar un hermoso crecimiento,
-                                el Señor nos permitió regresar al 1106 de la Witte RD., donde se remodeló la propiedad,
-                                haciendo un Santuario con capacidad para 500 personas para La Gloría de Dios.</p>
-                            <p data-aos="fade-down">A fines del año 2002 el pastor y apóstol Pedro Cantú junto con su
-                                esposa Leticia fueron visitados por el Señor en la ciudad de Guatemala, en un Congreso al
-                                cuál fueron invitados y se habló sobre la Operación Multiplicación. Ahí recibieron las
-                                estrategias para establecer La Visión Conquistando y Transformando, la cual ha traído un
-                                crecimiento y fortalecimiento en nuestra Iglesia, y además está siendo de bendición a otros
-                                ministerios e iglesias en Houston, también en otras ciudades de Estados Unidos, Canadá,
-                                México y Centroamérica.</p>
-                            <p data-aos="fade-down">Y en el mes de mayo del 2010 Dios nos sorprendio con una tremanda
-                                transferncia ya que sobrenaturalmente la iglesia Amor y Restauracion compro la propiedad
-                                ubicada en el 1610 Campbel Rd. Houston Texas 77055 a Spring Branch First Baptist Church una
-                                propiedad con casi 6 acres de tierra y 65,000 pies cuadrados de construccion contando con un
-                                hermoso Santuario con 728 butacas y ademas con 70 aulas educativas y un hermoso Gimnasio en
-                                esta propiedad estuvimos operando hasta el 1 de Enero del 2023.
-                            <p>
-                            <p data-aos="fade-down">El 28 de diciembre del 2022 se vendió de manera sobrenatural la
-                                propiedad de la Campbell para comprar el 30 de diciembre las nuevas instalaciones de nuestra
-                                iglesia que hoy es la nueva cedé en el 10707 Haddington Dr Houston Texas 77043
-                                Que cuenta con 7 acres de tierra y 2 edificios con aproximadamente 64,000 cuadrados de
-                                construcción y donde se está preparando un santuario para 1500 personas.
+                            <p data-aos="fade-down">En Julio de 1990, el Pastor Pedro Cantú y su esposa Leticia, junto con
+                                sus dos hijas pequeñas, Rocío y Perla llegaron a Houston, TX, desde Monterrey, México con
+                                nada más que dos maletas y corazones llenos de fe. Más tarde ese año, la pastora Leticia dio
+                                a luz a su hija menor, Sarahí y su familia de cinco miembros estaba completa.
                             </p>
-                            <p data-aos="fade-down">Creemos que la unidad y el compromiso de las personas que estamos
-                                trabajando en este equipo ministerial nos llevarán a alcanzar a Houston y los EUA para
-                                Cristo, junto con aquellos pastores e iglesias que son parte del Cuerpo de Cristo aquí en
-                                esta nación.</p>
+                            <p data-aos="fade-down">El pastor Pedro llevaba un año trabajando como maquinista y sintió el
+                                llamado de Dios sobre
+                                su vida para compartir el amor de Cristo con otras familias. En 1991 él y su esposa abrieron
+                                las puertas de su pequeño departamento para reunirse con otras dos familias para adorar a
+                                Dios y estudiar la Biblia.</p>
+                            <p data-aos="fade-down">Ese pequeño grupo pronto comenzó a multiplicarse y las familias
+                                decidieron que era hora de expandir sus horizontes. Hicieron un esfuerzo de colaboración
+                                para alquilar un pequeño lugar donde pudieran crear un espacio para adorar a Dios y sin
+                                darse cuenta, eran ya una pequeña congregación.
+                            <p>
+                            <p data-aos="fade-down">Desde la apertura de Amor y Restauración en 1991 nos hemos mudado tres
+                                veces, cada vez expandiendonos en crecimiento y en oportunidades para servir no sólamente a
+                                la comunidad local, sino también a la red de iglesias que están bajo la cobertura de este
+                                ministerio.
+                            </p>
+                            <p data-aos="fade-down">En este caminar hemos enfrentado retos al igual que victorias, siempre
+                                conscientes de que la voluntad y el favor de Dios van al frente de todo lo que hacemos. ¡Es
+                                por su gracia y amor que hoy seguimos de pie para su gloria y para que su reino se siga
+                                expandiendo!</p>
+                            <p data-aos="fade-down">Es para nosotros un honor poder ser los pies y manos de Jesús a través
+                                de la obra que Él nos ha confiado y te invitamos a que tú también seas parte de lo que Dios
+                                está haciendo a través de Amor y Restauración.</p>
                         </div>
                         <div class="col-sm-5">
                             <div class="sticky-top mt-4 mb-4">
@@ -371,8 +367,37 @@
                     <div data-aos="zoom-in" class="row">
                         <div class="col-lg-12 text-center mb-4">
                             <div class="image">
-                                <img class="img-fluid mb-2" width="auto" src="assets/img/index/oracion.png"
-                                    alt="Necesitas oración"><br>
+                                <div class="oracion-carousel owl-carousel owl-theme owl-loaded owl-drag">
+                                    <div class="owl-stage-outer">
+                                        <div class="owl-stage"
+                                            style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s; width: 10200px;">
+                                            <div class="owl-item active">
+                                                <a href="{{ asset('assets/img/index/oracion1.png') }}">
+                                                    <div class="cate-widget">
+                                                        <img class="img-fluid serv-img" alt="Carousel oracion"
+                                                            src="{{ asset('assets/img/index/oracion1.png') }}">
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="owl-item">
+                                                <a href="{{ asset('assets/img/index/oracion2.png') }}">
+                                                    <div class="cate-widget">
+                                                        <img class="img-fluid serv-img" alt="Carousel oracion"
+                                                            src="{{ asset('assets/img/index/oracion2.png') }}">
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="owl-item">
+                                                <a href="{{ asset('assets/img/index/oracion3.png') }}">
+                                                    <div class="cate-widget">
+                                                        <img class="img-fluid serv-img" alt="Carousel oracion"
+                                                            src="{{ asset('assets/img/index/oracion3.png') }}">
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <div class="box">
                                 <img class="mb-2" width="40px" src="assets/img/icons/sillon.png"

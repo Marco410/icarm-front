@@ -2002,7 +2002,8 @@ html.menu-opened body {
 
 .como-funciona {
 	background-color: var(--primary);
-	padding: 40px 0;
+	padding-bottom: 160px;
+	padding-top: 40px;
 }
 
 .como-funciona .image img {
@@ -2012,6 +2013,8 @@ html.menu-opened body {
 }
 
 .como-funciona .box {
+	position: absolute;
+	z-index: 9999999;
 	padding: 15px 45px 15px 45px;
 	border-radius: 15px;
 	background-color: #fafafa;
@@ -2179,7 +2182,7 @@ html.menu-opened body {
 
 .donaciones .img-back img {
 	width: 90%;
-	border-radius: 45px;
+	border-radius: 25px;
 	box-shadow: 0 5px 20px rgb(0 0 0 / 30%);
 
 }
@@ -3751,6 +3754,10 @@ section.contactanos textarea {
 	top: 5px;
 	right: 6px;
 	padding: 0;
+}
+
+.subscribe-form a {
+	margin-bottom: 10px;
 }
 
 .footer .footer-bottom .copyright {
@@ -6307,4 +6314,37 @@ i {
 .blog h2 {
 	font-size: 44px;
 	margin-bottom: 20px;
+}
+
+
+/* PAGE MEDIA */
+
+
+.podcast h2 {
+	font-size: 44px;
+}
+
+.podcast .social-links {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.podcast .social-links img {
+
+	width: 60px;
+	height: 60px;
+	margin-right: 20px;
+	margin-top: 20px;
+	border-radius: 15px;
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+}
+
+.podcast .social-links img:hover {
+	width: 65px;
+	height: 65px;
+	transition: 0.1s;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
 }

@@ -10,26 +10,14 @@
         </div>
     </section>
     <!--- Matrimonios --->
-    <section class="inner-page-hero">
+    <section class="inner-page-hero p-4">
         <div class="container">
             <div class="row">
-                <div class="col-sm-4">
-                    <div class="sticky-top mt-4">
-                        <img src="{{ asset('assets/img/index/mujeres/guerreras.png') }}" alt="Mujeres Guerreras">
+                <div class="col-sm-12 text-center">
+                    <div class="sticky-top ">
+                        <img data-aos="fade-down" style="height: 30%; width: 30%;"
+                            src="{{ asset('assets/img/index/mujeres/guerreras.png') }}" alt="Mujeres Guerreras">
                     </div>
-                </div>
-                <div class="col-sm-7">
-                    <p class="p-4">Recuerda que Dios te ha colocado a ti como esa mujer de influencia, de empuje, de
-                        mucho valor y amor para los tuyos. Eres una columna muy fuerte entre los tuyos, y si es así es
-                        solamente porque tenemos un Dios Fuerte y Magnifico, lleno de misericordia, bondad y amor. El dijo
-                        que no nos dejaría solas, que estaría con nosotros hasta el fin del mundo. Si El va con nosotras yo
-                        también quiero ir.! En esta sección encontraras mensajes para tu vida, que te van a desafiar y a
-                        llevarte a reconocer la grandeza de Dios en medio nuestro.</p>
-                    <p class="p-4">También quisiéramos apoyarte con guía bíblica en medio de los conflictos y luchas que
-                        nosotras las mujeres pasamos, esperamos sea de ayuda para tu caminar en Cristo, y te invitamos a que
-                        lo compartas con tus amistades y familia que no tienen a Cristo como su Salvador.
-                    </p>
-                    <p class="float-right"> <strong> - Pastora Leticia Cantú</strong></p>
                 </div>
             </div>
         </div>
@@ -43,21 +31,31 @@
             <div class="row">
                 <div class="col-sm-6">
                     <div class="sticky-top mt-4">
-                        <h3>Lety Cantú</h3>
-                        <p>Pastora</p>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                            the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
-                            of type and scrambled it to make a type specimen book. It has survived not only five centuries,
-                            but also the leap into electronic typesetting, remaining essentially unchanged. It was
-                            popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
-                            and more recently with desktop publishing software like Aldus PageMaker including versions of
-                            Lorem Ipsum.</p>
+                        <h3 data-aos="fade-down">Lety Cantú</h3>
+                        <p data-aos="fade-down">Pastora</p>
+                        <p data-aos="fade-down" class="p-4">Recuerda que Dios te ha colocado a ti como esa mujer de
+                            influencia, de empuje, de
+                            mucho valor y amor para los tuyos. Eres una columna muy fuerte entre los tuyos, y si es así es
+                            solamente porque tenemos un Dios Fuerte y Magnifico, lleno de misericordia, bondad y amor. El
+                            dijo
+                            que no nos dejaría solas, que estaría con nosotros hasta el fin del mundo. Si El va con nosotras
+                            yo
+                            también quiero ir.! En esta sección encontraras mensajes para tu vida, que te van a desafiar y a
+                            llevarte a reconocer la grandeza de Dios en medio nuestro.</p>
+                        <p data-aos="fade-down" class="p-4">También quisiéramos apoyarte con guía bíblica en medio de los
+                            conflictos y luchas
+                            que
+                            nosotras las mujeres pasamos, esperamos sea de ayuda para tu caminar en Cristo, y te invitamos a
+                            que
+                            lo compartas con tus amistades y familia que no tienen a Cristo como su Salvador.
+                        </p>
+                        <p data-aos="fade-right" class="float-right"> <strong> - Pastora Leticia Cantú</strong></p>
                         <a class="btn" data-aos="fade-up" href="#">Ver Perfil <i class="fas fa-user"></i></a>
                     </div>
                 </div>
-                <div class="col-sm-6 img-back">
-                    <img data-aos="fade-down" src="{{ asset('assets/img/index/mujeres/lety_cantu.png') }}"
-                        alt="Pastora Leticia Cantú ICARM">
+                <div class="col-sm-6 img-back text-center">
+                    <img data-aos="fade-left" style="width: 70%; height: 90%;"
+                        src="{{ asset('assets/img/index/mujeres/lety_cantu.png') }}" alt="Pastora Leticia Cantú ICARM">
                 </div>
             </div>
         </div>
