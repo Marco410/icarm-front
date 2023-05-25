@@ -9,7 +9,7 @@
             <p data-aos="fade-up">Todos los Martes y Jueves.</p>
         </div>
     </section>
-    <section class="podcast">
+    <section class="podcast" style="padding: 80px">
 
         <div class="container">
             <div class="row">
@@ -43,93 +43,5 @@
         </div>
     </section>
 
-    <section class="blog">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12 text-center">
-                    <h2 class="p-4"><strong>Entradas del blog</strong></h2>
-                    <div class="blog-carousel" data-aos="fade-up">
-                        <div class="blog-slider owl-carousel owl-theme owl-loaded owl-drag">
-                            <div class="owl-stage-outer">
-                                <div class="owl-stage"
-                                    style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s; width: 10200px;">
-                                    <div class="owl-item active" style="width: 270px; margin-right: 30px;">
-                                        <a href="{{ asset('assets/img/index/hombres/blog1.jpg') }}">
-                                            <div class="cate-widget">
-                                                <img class="img-fluid serv-img" alt="Blog ICARM"
-                                                    src="{{ asset('assets/img/index/hombres/blog1.jpg') }}">
-                                                <div class="cate-title">
-                                                    <h3><span><i class="fas fa-circle"></i> Nueva Entrada</span>
-                                                    </h3>
-                                                </div>
-                                                <div class="cate-count">
-                                                    <i class="fas fa-calendar"></i> 16 nov 2022
-                                                </div>
-                                                <div class="cate-hour">
-                                                    <i class="fas fa-user"></i> Pedro Cantú
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="owl-item active" style="width: 270px; margin-right: 30px;">
-                                        <a href="{{ asset('assets/img/index/hombres/blog2.jpg') }}">
-                                            <div class="cate-widget">
-                                                <img class="img-fluid serv-img" alt="Blog icarm"
-                                                    src="{{ asset('assets/img/index/hombres/blog2.jpg') }}">
-                                                <div class="cate-title">
-                                                    <h3><span><i class="fas fa-circle"></i> Nueva Entrada</span></h3>
-                                                </div>
-                                                <div class="cate-count">
-                                                    <i class="fas fa-calendar"></i> 19 nov 2022
-                                                </div>
-                                                <div class="cate-hour">
-                                                    <i class="fas fa-user"></i> Pedro Cantú
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="owl-item active" style="width: 270px; margin-right: 30px;">
-                                        <a href="{{ asset('assets/img/index/hombres/blog3.jpg') }}">
-                                            <div class="cate-widget">
-                                                <img class="img-fluid serv-img" alt="Blog icarm"
-                                                    src="{{ asset('assets/img/index/hombres/blog3.jpg') }}">
-                                                <div class="cate-title">
-                                                    <h3><span><i class="fas fa-circle"></i> Nueva Entrada</span>
-                                                    </h3>
-                                                </div>
-                                                <div class="cate-count">
-                                                    <i class="fas fa-calendar"></i> 16 nov 2022
-                                                </div>
-                                                <div class="cate-hour">
-                                                    <i class="fas fa-user"></i> Pedro Cantú
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="owl-item active" style="width: 270px; margin-right: 30px;">
-                                        <a href="{{ asset('assets/img/index/hombres/blog4.jpg') }}">
-                                            <div class="cate-widget">
-                                                <img class="img-fluid serv-img" alt="Blog icarm"
-                                                    src="{{ asset('assets/img/index/hombres/blog4.jpg') }}">
-                                                <div class="cate-title">
-                                                    <h3><span><i class="fas fa-circle"></i> Nueva Entrada</span></h3>
-                                                </div>
-                                                <div class="cate-count">
-                                                    <i class="fas fa-calendar"></i> 19 nov 2022
-                                                </div>
-                                                <div class="cate-hour">
-                                                    <i class="fas fa-user"></i> Pedro Cantú
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
     </div>
 @endsection
