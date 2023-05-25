@@ -24,6 +24,7 @@
             'index.estrategia',
             'aliento',
             'index.media',
+            'index.datos',
             'errors.build',
             'term-condition',
             'privacy-policy',

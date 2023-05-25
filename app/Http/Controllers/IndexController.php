@@ -48,6 +48,10 @@ class IndexController extends Controller
         return view('index.media');
     }
 
+    public function datos(){
+        return view('index.datos');
+    }
+
     public function estrategia(){
         return view('index.estrategia');
     }
