@@ -13,7 +13,11 @@
             <a data-aos="fade-left" href="#contacto">Contácto</a>
         </div>
     </section>
+    <?php $hoy = date('Y-m-d');
+    $fechaAxios = '2023-07-30';
+    $fechaGuardianes = '2023-08-5'; ?>
     {{-- Eventos section --}}
+    <?php if ($hoy <= $fechaGuardianes){ ?>
     <section class="popular-services" id="eventos">
         <div class="container">
             <div class="row">
@@ -32,9 +36,7 @@
                             </div>
                         </div>
                     </div>
-                    <?php $hoy = date('Y-m-d');
-                    $fechaAxios = '2023-07-30';
-                    $fechaGuardianes = '2023-08-5'; ?>
+
                     <div class="service-carousel" data-aos="fade-up">
                         <div class="marca-slider owl-carousel owl-theme owl-loaded owl-drag">
                             <div class="owl-stage-outer">
@@ -56,7 +58,6 @@
                                         </a>
                                     </div>
                                     <?php } ?>
-                                    <?php if ($hoy <= $fechaGuardianes){ ?>
                                     <div class="owl-item active" style="margin-right: 30px;">
                                         <a href="{{ route('index.guardianes') }}">
                                             <div class="cate-widget">
@@ -72,7 +73,6 @@
                                             </div>
                                         </a>
                                     </div>
-                                    <?php } ?>
 
                                 </div>
                             </div>
@@ -105,6 +105,8 @@
 
             </div>
     </section>
+    <?php } ?>
+
     <!-- /Eventos Section -->
     <!-- Hero Section -->
     <section class="hero-section">

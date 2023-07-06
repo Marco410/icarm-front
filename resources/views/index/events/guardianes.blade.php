@@ -5,7 +5,7 @@
     <section class="hero">
         <img src="{{ asset('assets/img/index/events/guardianes.png') }}" class="back-video" alt="guardianes">
 
-        <img style="border-radius: 15px; margin:20px; width: 80%" class="img-fluid serv-img" alt="guardianes"
+        <img style="border-radius: 15px; margin:20px; width: 100%" class="img-fluid serv-img" alt="guardianes"
             src="{{ asset('assets/img/index/events/guardianes.png') }}">
     </section>
     <section class="image-text-section">
@@ -16,7 +16,7 @@
                 </div>
                 <div class="col-sm-12 text-center">
                     <a href="{{ asset('assets/img/index/events/guardianes-2.png') }}">
-                        <img style="border-radius: 15px; margin:10px; width: 80%" class="img-fluid serv-img"
+                        <img style="border-radius: 15px; margin:10px; width: 100%" class="img-fluid serv-img"
                             alt="guardianes" src="{{ asset('assets/img/index/events/guardianes-2.png') }}">
                     </a>
 
