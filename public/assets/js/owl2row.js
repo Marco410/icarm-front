@@ -1,6 +1,6 @@
-$(document).ready(function() {
+$(document).ready(function () {
   var el = $('.marca-slider');
-  
+
   var carousel;
   var carouselOptions = {
     margin: 20,
@@ -17,14 +17,14 @@ $(document).ready(function() {
         rows: 3 //custom option not used by Owl Carousel, but used by the algorithm below
       },
       991: {
-        items: 3,
+        items: 2,
         rows: 2 //custom option not used by Owl Carousel, but used by the algorithm below
       }
     }
   };
 
   //Taken from Owl Carousel so we calculate width the same way
-  var viewport = function() {
+  var viewport = function () {
     var width;
     if (carouselOptions.responsiveBaseElement && carouselOptions.responsiveBaseElement !== window) {
       width = $(carouselOptions.responsiveBaseElement).width();
@@ -46,7 +46,7 @@ $(document).ready(function() {
     }
     orderedBreakpoints.push(parseInt(breakpoint));
   }
-  
+
   //Custom logic is active if carousel is set up to have more than one row for some given window width
   if (severalRows) {
     orderedBreakpoints.sort(function (a, b) {
@@ -62,7 +62,7 @@ $(document).ready(function() {
 
       //Calculates number of rows and cols based on current window width
       var updateRowsColsNb = function () {
-        var width =  viewport();
+        var width = viewport();
         for (var i = 0; i < orderedBreakpoints.length; i++) {
           var breakpoint = orderedBreakpoints[i];
           if (width >= breakpoint || i == (orderedBreakpoints.length - 1)) {

@@ -52,6 +52,14 @@ class IndexController extends Controller
         return view('index.datos');
     }
 
+    public function axios(){
+        return view('index.events.axios');
+    }
+
+    public function guardianes(){
+        return view('index.events.guardianes');
+    }
+
     public function estrategia(){
         return view('index.estrategia');
     }

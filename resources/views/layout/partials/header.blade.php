@@ -25,6 +25,8 @@
             'aliento',
             'index.media',
             'index.datos',
+            'index.axios',
+            'index.guardianes',
             'errors.build',
             'term-condition',
             'privacy-policy',

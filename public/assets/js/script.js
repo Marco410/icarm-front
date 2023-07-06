@@ -161,7 +161,7 @@ Version      : 1.0
 					rows: 2
 				},
 				1170: {
-					items: 4,
+					items: 2,
 					rows: 2
 				}
 			}

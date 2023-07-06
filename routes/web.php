@@ -26,6 +26,9 @@ Route::get('/contacto', 'IndexController@contacto')->name('index.contacto');
 Route::get('/media', 'IndexController@media')->name('index.media');
 Route::get('/datos', 'IndexController@datos')->name('index.datos');
 
+Route::get('/eventos/axios', 'IndexController@axios')->name('index.axios');
+Route::get('/eventos/guardianes-del-reino', 'IndexController@guardianes')->name('index.guardianes');
+
 Route::get('/estrategia', 'IndexController@estrategia')->name('index.estrategia');
 
 Route::post('/send-contact', 'IndexController@send_contact')->name('send.contacto');

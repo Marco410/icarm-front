@@ -16,7 +16,7 @@
     {{-- Eventos section --}}
     <section class="popular-services" id="eventos">
         <div class="container">
-            <div class="row" style="display: none;">
+            <div class="row">
                 <div class="col-lg-12">
                     <div class="row">
                         <div class="col-md-6">
@@ -32,115 +32,48 @@
                             </div>
                         </div>
                     </div>
+                    <?php $hoy = date('Y-m-d');
+                    $fechaAxios = '2023-07-30';
+                    $fechaGuardianes = '2023-08-5'; ?>
                     <div class="service-carousel" data-aos="fade-up">
                         <div class="marca-slider owl-carousel owl-theme owl-loaded owl-drag">
                             <div class="owl-stage-outer">
                                 <div class="owl-stage"
                                     style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s; width: 10200px;">
-                                    <div class="owl-item active" style="width: 270px; margin-right: 30px;">
-                                        <a href="{{ asset('assets/img/index/iglesia/central.png') }}">
+                                    <?php if ($hoy <= $fechaAxios){ ?>
+                                    <div class="owl-item active" style="margin-right: 30px;">
+                                        <a href="{{ route('index.axios') }}">
                                             <div class="cate-widget">
-                                                <img class="img-fluid serv-img" alt="Marca Alfa Romeo"
-                                                    src="{{ asset('assets/img/index/iglesia/central.png') }}">
+                                                <img class="img-fluid serv-img" alt="Axios"
+                                                    src="{{ asset('assets/img/index/events/axios.jpg') }}">
                                                 <div class="cate-title">
                                                     <h3><span><i class="fas fa-circle"></i> A&R Central</span></h3>
                                                 </div>
                                                 <div class="cate-count">
-                                                    <i class="fas fa-calendar"></i> 16 nov - 19 nov
-                                                </div>
-                                                <div class="cate-hour">
-                                                    <i class="fas fa-clock"></i> 10:00pm
+                                                    <i class="fas fa-calendar"></i> July 27-29 2023
                                                 </div>
                                             </div>
                                         </a>
                                     </div>
-                                    <div class="owl-item active" style="width: 270px; margin-right: 30px;">
-                                        <a href="{{ asset('assets/img/index/iglesia/central.png') }}">
+                                    <?php } ?>
+                                    <?php if ($hoy <= $fechaGuardianes){ ?>
+                                    <div class="owl-item active" style="margin-right: 30px;">
+                                        <a href="{{ route('index.guardianes') }}">
                                             <div class="cate-widget">
-                                                <img class="img-fluid serv-img" alt="Marca Audi"
-                                                    src="{{ asset('assets/img/index/iglesia/central.png') }}">
+                                                <img class="img-fluid serv-img" alt="Guardianes del Reino"
+                                                    src="{{ asset('assets/img/index/events/guardianes.png') }}">
                                                 <div class="cate-title">
                                                     <h3><span><i class="fas fa-circle"></i> A&R Central</span></h3>
                                                 </div>
                                                 <div class="cate-count">
-                                                    <i class="fas fa-calendar"></i> 16 nov - 19 nov
+                                                    <i class="fas fa-calendar"></i> Agosto 2-4 2023
                                                 </div>
-                                                <div class="cate-hour">
-                                                    <i class="fas fa-clock"></i> 10:00pm
-                                                </div>
+
                                             </div>
                                         </a>
                                     </div>
-                                    <div class="owl-item active" style="width: 270px; margin-right: 30px;">
-                                        <a
-                                            href="https://static.wixstatic.com/media/bf53c1_b1ec9ae91b954d629cca1c5c0b6d80e4~mv2.jpg/v1/fill/w_734,h_958,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/bf53c1_b1ec9ae91b954d629cca1c5c0b6d80e4~mv2.jpg">
-                                            <div class="cate-widget">
-                                                <img class="img-fluid serv-img" alt="Marca BMW"
-                                                    src="https://static.wixstatic.com/media/bf53c1_b1ec9ae91b954d629cca1c5c0b6d80e4~mv2.jpg/v1/fill/w_734,h_958,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/bf53c1_b1ec9ae91b954d629cca1c5c0b6d80e4~mv2.jpg">
-                                                <div class="cate-title">
-                                                    <h3><span><i class="fas fa-circle"></i> A&R Norte</span></h3>
-                                                </div>
-                                                <div class="cate-count">
-                                                    <i class="fas fa-calendar"></i> 16 nov - 19 nov
-                                                </div>
-                                                <div class="cate-hour">
-                                                    <i class="fas fa-clock"></i> 10:00pm
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="owl-item active" style="width: 270px; margin-right: 30px;">
-                                        <a href="{{ asset('assets/img/index/iglesia/central.png') }}">
-                                            <div class="cate-widget">
-                                                <img class="img-fluid serv-img" alt="Marca BUICK-GMC-Cadillac"
-                                                    src="{{ asset('assets/img/index/iglesia/central.png') }}">
-                                                <div class="cate-title">
-                                                    <h3><span><i class="fas fa-circle"></i> A&R Central</span></h3>
-                                                </div>
-                                                <div class="cate-count">
-                                                    <i class="fas fa-calendar"></i> 16 nov - 19 nov
-                                                </div>
-                                                <div class="cate-hour">
-                                                    <i class="fas fa-clock"></i> 10:00pm
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="owl-item" style="width: 270px; margin-right: 30px;">
-                                        <a
-                                            href="https://static.wixstatic.com/media/bf53c1_b1ec9ae91b954d629cca1c5c0b6d80e4~mv2.jpg/v1/fill/w_734,h_958,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/bf53c1_b1ec9ae91b954d629cca1c5c0b6d80e4~mv2.jpg">
-                                            <div class="cate-widget">
-                                                <img class="img-fluid serv-img" alt="Marca Cadillac"
-                                                    src="https://static.wixstatic.com/media/bf53c1_b1ec9ae91b954d629cca1c5c0b6d80e4~mv2.jpg/v1/fill/w_734,h_958,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/bf53c1_b1ec9ae91b954d629cca1c5c0b6d80e4~mv2.jpg">
-                                                <div class="cate-title">
-                                                    <h3><span><i class="fas fa-circle"></i> A&R Norte</span></h3>
-                                                </div>
-                                                <div class="cate-count">
-                                                    <i class="fas fa-calendar"></i> 16 nov - 19 nov
-                                                </div>
-                                                <div class="cate-hour">
-                                                    <i class="fas fa-clock"></i> 10:00pm
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="owl-item" style="width: 270px; margin-right: 30px;">
-                                        <a href="{{ asset('assets/img/index/iglesia/central.png') }}">
-                                            <div class="cate-widget">
-                                                <img class="img-fluid serv-img" alt="Marca Chevrolet"
-                                                    src="{{ asset('assets/img/index/iglesia/central.png') }}">
-                                                <div class="cate-title">
-                                                    <h3><span><i class="fas fa-circle"></i> A&R Central</span></h3>
-                                                </div>
-                                                <div class="cate-count">
-                                                    <i class="fas fa-calendar"></i> 16 nov - 19 nov
-                                                </div>
-                                                <div class="cate-hour">
-                                                    <i class="fas fa-clock"></i> 10:00pm
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
+                                    <?php } ?>
+
                                 </div>
                             </div>
                         </div>
@@ -163,13 +96,13 @@
                         </div>
                     </div>
                     <div class="row" data-aos="fade-up">
-                        <iframe title="Pastor Pedro Cantu Podcast" allowtransparency="true" height="315"
-                            width="100%" style="border: none; min-width: min(100%, 430px);" scrolling="no"
-                            data-name="pb-iframe-player"
+                        <iframe title="Pastor Pedro Cantu Podcast" allowtransparency="true" height="315" width="100%"
+                            style="border: none; min-width: min(100%, 430px);" scrolling="no" data-name="pb-iframe-player"
                             src="https://www.podbean.com/player-v2/?i=bnxay-f457dc-pbblog-playlist&share=1&download=1&rtl=0&fonts=Arial&skin=1&font-color=&logo_link=episode_page&order=episodic&limit=10&filter=all&ss=a713390a017602015775e868a2cf26b0&btn-skin=1b1b1b&size=315"
                             allowfullscreen=""></iframe>
                     </div>
                 </div>
+
             </div>
     </section>
     <!-- /Eventos Section -->
@@ -244,8 +177,7 @@
                     </div>
                 </div>
                 <div class="col-sm-7 img-back">
-                    <img data-aos="fade-down" src="{{ asset('assets/img/index/cobertura.png') }}"
-                        alt="Donaciones ICARM">
+                    <img data-aos="fade-down" src="{{ asset('assets/img/index/cobertura.png') }}" alt="Donaciones ICARM">
                 </div>
             </div>
         </div>
