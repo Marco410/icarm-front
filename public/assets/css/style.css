@@ -1492,6 +1492,10 @@ html.menu-opened body {
 	width: 40%;
 }
 
+.hero .event-img {
+	width: 60% !important;
+}
+
 .content h1 {
 	font-size: 100px;
 	color: var(--white);
@@ -1532,6 +1536,30 @@ html.menu-opened body {
 		width: auto;
 		height: 100%;
 	}
+}
+
+.text-info {
+	align-items: center;
+	justify-content: center;
+	padding: 30px;
+	margin-left: 50px;
+}
+
+.text-info h2.text {
+	background-color: white;
+	border-radius: 8px;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+	font-size: 25px;
+	color: var(--primary);
+	padding: 10px;
+}
+
+.box {
+	background-color: white;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+	padding: 30px;
+	margin: 10px;
+	border-radius: 15px;
 }
 
 .hero-section {
@@ -5413,6 +5441,11 @@ div.dataTables_wrapper div.dataTables_filter input {
 	.main-nav li a {
 		font-size: 0.8125rem;
 	}
+
+	.hero .event-img {
+		width: 100% !important;
+	}
+
 }
 
 @media only screen and (max-width: 991.98px) {
