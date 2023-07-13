@@ -14,9 +14,9 @@
             <div class="col-sm-12">
                 <div class="heading">
                     <a href="#information">
-                        <h2>General Information <i class="fa fa-chevron-down"></i> </h2>
+                        <h2>Información General / General Information <i class="fa fa-chevron-down"></i> </h2>
                     </a>
-                    <span>Explora todos nuestros eventos</span>
+                    <span>27-29 de Julio / July 27-29 </span>
                 </div>
             </div>
         </div>
@@ -37,8 +37,10 @@
     <section id="information">
         <div class="container">
             <div class="row ">
-                <div class="col-sm-6">
-                    <div class="box">
+                <div class="col-sm-6 ">
+                    <div class="box text-center" style="height: 90%">
+                        <img class="img-fluid mb-4 text-center" width="64px" height="64px" alt="Registro Axios A&R"
+                            src="{{ asset('assets/img/index/events/icons/anadir.png') }}">
                         <h4>Registration</h4>
                         <p>Please register online using the link at amoryrestauracion.tv or the QR code provided. Your
                             registration will not be fully processed until you have paid.</p>
@@ -48,7 +50,24 @@
                     </div>
                 </div>
                 <div class="col-sm-6 ">
-                    <div class="box">
+                    <div class="box text-center" style="height: 90%">
+                        <img class="img-fluid mb-4 text-center" width="74px" height="74px" alt="Comidas Axios A&R"
+                            src="{{ asset('assets/img/index/events/icons/entrega-de-comida.png') }}">
+                        <h4>Meals:</h4>
+                        <p>Jueves - Dinner
+                            Viernes - Breakfast Snack, Lunch and Dinner
+                            Sabado - Breakfast Snack and Lunch</p>
+                        <h4>Comidas:</h4>
+                        <p>Jueves - Cena
+                            Viernes - Desayuno Merienda, Almuerzo y Cena
+                            Sábado - Desayuno Merienda y Almuerzo</p>
+
+                    </div>
+                </div>
+                <div class="col-sm-6 ">
+                    <div class="box text-center" style="height: 90%;">
+                        <img class="img-fluid mb-4" width="64px" height="64px" alt="Atuendo Axios A&R"
+                            src="{{ asset('assets/img/index/events/icons/ropa-deportiva.png') }}">
                         <h4>Attire:</h4>
                         <p>
                             Dress comfortably! There will be indoor and outdoor activities. We recommend you throw your
@@ -67,21 +86,11 @@
                             texto inapropiados.</p>
                     </div>
                 </div>
-                <div class="col-sm-6">
-                    <div class="box">
-                        <h4>Meals:</h4>
-                        <p>Jueves - Dinner
-                            Viernes - Breakfast Snack, Lunch and Dinner
-                            Sabado - Breakfast Snack and Lunch</p>
-                        <h4>Comidas:</h4>
-                        <p>Jueves - Cena
-                            Viernes - Desayuno Merienda, Almuerzo y Cena
-                            Sábado - Desayuno Merienda y Almuerzo</p>
 
-                    </div>
-                </div>
                 <div class="col-sm-6">
-                    <div class="box">
+                    <div class="box text-center" style="height: 90%;">
+                        <img class="img-fluid mb-4" width="64px" height="64px" alt="Merch Axios A&R"
+                            src="{{ asset('assets/img/index/events/icons/embalaje.png') }}">
                         <h4>Merch/Snacks for sale: </h4>
                         <p>Meals will be provided but if you would like to buy snacks or merch throughout the day bring
                             cash.</p>
@@ -92,6 +101,8 @@
                 </div>
                 <div class="col-sm-12">
                     <div class="box text-center">
+                        <img class="img-fluid mb-4" width="64px" height="64px" alt="Merch Axios A&R"
+                            src="{{ asset('assets/img/index/events/icons/embalaje.png') }}">
                         <h4>Parent conference date and time/Fecha y hora de la conferencia de padres</h4>
                         <p>There will be 3 workshops for parents on Friday from 5pm to 9pm with small coffee breaks in
                             between.</p>
@@ -110,6 +121,8 @@
                 </div>
                 <div class="col-sm-12">
                     <div class="box text-center">
+                        <img class="img-fluid mb-4" width="84px" height="84px" alt="Calendario Axios A&R"
+                            src="{{ asset('assets/img/index/events/icons/calendario.png') }}">
                         <h4>What will the day look like? / ¿Cómo es el programa?</h4>
 
                         <h4>Jueves</h4>
