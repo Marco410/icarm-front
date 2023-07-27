@@ -29,6 +29,10 @@
                         <img style="border-radius: 15px; margin:10px; width: 100%" class="img-fluid serv-img" alt="Axios"
                             src="{{ asset('assets/img/index/events/axios-2.jpg') }}">
                     </a>
+
+                    <a target="_blank" class="btn btn-primary btn-registro"
+                        href="https://docs.google.com/forms/d/1pAZhbLqQMQp3xZQb6YFJrNMSb6fyoUMK4bH-m5zPhXY/edit?ts=648a10dd#">Registrate
+                        aquí</a>
                 </div>
             </div>
 
@@ -39,8 +43,10 @@
             <div class="row ">
                 <div class="col-sm-6 ">
                     <div class="box text-center" style="height: 90%">
-                        <img class="img-fluid mb-4 text-center" width="64px" height="64px" alt="Registro Axios A&R"
-                            src="{{ asset('assets/img/index/events/icons/anadir.png') }}">
+                        <a target="_blank"
+                            href="https://docs.google.com/forms/d/1pAZhbLqQMQp3xZQb6YFJrNMSb6fyoUMK4bH-m5zPhXY/edit?ts=648a10dd#"><img
+                                class="img-fluid mb-4 text-center" width="64px" height="64px" alt="Registro Axios A&R"
+                                src="{{ asset('assets/img/index/events/icons/anadir.png') }}"></a>
                         <h4>Registration</h4>
                         <p>Please register online using the link at amoryrestauracion.tv or the QR code provided. Your
                             registration will not be fully processed until you have paid.</p>
@@ -119,7 +125,7 @@
                     </div>
 
                 </div>
-                <div class="col-sm-12">
+                <div class="col-sm-12 text-center">
                     <div class="box text-center">
                         <img class="img-fluid mb-4" width="84px" height="84px" alt="Calendario Axios A&R"
                             src="{{ asset('assets/img/index/events/icons/calendario.png') }}">
@@ -158,6 +164,9 @@
                         </p>
 
                     </div>
+                    <a target="_blank" class="btn btn-primary btn-registro m-4"
+                        href="https://docs.google.com/forms/d/1pAZhbLqQMQp3xZQb6YFJrNMSb6fyoUMK4bH-m5zPhXY/edit?ts=648a10dd#">Registrate
+                        aquí</a>
                 </div>
             </div>
         </div>
