@@ -56,6 +56,10 @@ class IndexController extends Controller
         return view('index.events.axios');
     }
 
+    public function mtm23(){
+        return view('index.events.mtm23');
+    }
+
     public function guardianes(){
         return view('index.events.guardianes');
     }

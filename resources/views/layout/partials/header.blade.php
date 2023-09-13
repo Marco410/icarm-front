@@ -26,6 +26,7 @@
             'index.media',
             'index.datos',
             'index.axios',
+            'index.mtm23',
             'index.guardianes',
             'errors.build',
             'term-condition',

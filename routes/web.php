@@ -26,6 +26,7 @@ Route::get('/contacto', 'IndexController@contacto')->name('index.contacto');
 Route::get('/media', 'IndexController@media')->name('index.media');
 Route::get('/datos', 'IndexController@datos')->name('index.datos');
 
+Route::get('/mtm23', 'IndexController@mtm23')->name('index.mtm23');
 Route::get('/eventos/axios', 'IndexController@axios')->name('index.axios');
 Route::get('/eventos/guardianes-del-reino', 'IndexController@guardianes')->name('index.guardianes');
 

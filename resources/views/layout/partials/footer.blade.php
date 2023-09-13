@@ -93,8 +93,8 @@
                         </div>
                         <div>
                             <a class="mt-3" style="color:var(--primary); display:flex; align-items:center;"
-                                href="mailto:noreply@amoryrestauracion.org">
-                                <i class="fas fa-envelope mr-2"></i> noreply@amoryrestauracion.org </a>
+                                href="mailto:info@amoryrestauracion.org">
+                                <i class="fas fa-envelope mr-2"></i> info@amoryrestauracion.org </a>
 
                         </div>
                     </div>

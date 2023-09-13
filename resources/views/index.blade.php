@@ -14,10 +14,9 @@
         </div>
     </section>
     <?php $hoy = date('Y-m-d');
-    $fechaAxios = '2023-07-30';
-    $fechaGuardianes = '2023-08-5'; ?>
+    $fechaAxios = '2023-11-05'; ?>
     {{-- Eventos section --}}
-    <?php if ($hoy <= $fechaGuardianes){ ?>
+    <?php if ($hoy <= $fechaAxios){ ?>
     <section class="popular-services" id="eventos">
         <div class="container">
             <div class="row">
@@ -42,37 +41,21 @@
                             <div class="owl-stage-outer">
                                 <div class="owl-stage"
                                     style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s; width: 10200px;">
-                                    <?php if ($hoy <= $fechaAxios){ ?>
                                     <div class="owl-item active" style="margin-right: 30px;">
-                                        <a href="{{ route('index.axios') }}">
+                                        <a href="{{ route('index.mtm23') }}">
                                             <div class="cate-widget">
-                                                <img class="img-fluid serv-img" alt="Axios"
-                                                    src="{{ asset('assets/img/index/events/axios.jpg') }}">
+                                                <img class="img-fluid serv-img" alt="MtM 2023"
+                                                    src="{{ asset('assets/img/index/events/mtm23.png') }}">
                                                 <div class="cate-title">
                                                     <h3><span><i class="fas fa-circle"></i> A&R Central</span></h3>
                                                 </div>
                                                 <div class="cate-count">
-                                                    <i class="fas fa-calendar"></i> July 27-29 2023
+                                                    <i class="fas fa-calendar"></i> Nov 01-03 2023
                                                 </div>
                                             </div>
                                         </a>
                                     </div>
-                                    <?php } ?>
-                                    <div class="owl-item active" style="margin-right: 30px;">
-                                        <a href="{{ route('index.guardianes') }}">
-                                            <div class="cate-widget">
-                                                <img class="img-fluid serv-img" alt="Guardianes del Reino"
-                                                    src="{{ asset('assets/img/index/events/guardianes.png') }}">
-                                                <div class="cate-title">
-                                                    <h3><span><i class="fas fa-circle"></i> A&R Central</span></h3>
-                                                </div>
-                                                <div class="cate-count">
-                                                    <i class="fas fa-calendar"></i> Agosto 2-4 2023
-                                                </div>
 
-                                            </div>
-                                        </a>
-                                    </div>
 
                                 </div>
                             </div>
