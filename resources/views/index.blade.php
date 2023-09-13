@@ -55,14 +55,18 @@
                                             </div>
                                         </a>
                                     </div>
-
-
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+    <?php } ?>
+
+    <section class="popular-services" id="eventos">
+        <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="row">
@@ -87,8 +91,8 @@
                 </div>
 
             </div>
+        </div>
     </section>
-    <?php } ?>
 
     <!-- /Eventos Section -->
     <!-- Hero Section -->
