@@ -5816,6 +5816,11 @@ div.dataTables_wrapper div.dataTables_filter input {
 	.dropdown-menu {
 		font-size: 0.875rem;
 	}
+
+	.video-event {
+		width: 100%;
+		height: 100%;
+	}
 }
 
 @media only screen and (max-width: 575.98px) {

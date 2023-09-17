@@ -25,6 +25,15 @@
     <section id="information">
         <div class="container">
             <div class="row ">
+
+                <div class="col-sm-12 text-center">
+                    <video autoplay loop muted plays-inline width="710px" height="400px" class="video-event"
+                        style="border-radius: 15px;box-shadow: 0 5px 20px rgb(0 0 0 / 30%);">
+                        <source src="{{ asset('assets/video/index/mtm23.mp4') }}" type="video/mp4">
+                    </video>
+                </div>
+
+
                 <div class="col-sm-4">
                     <div class="box text-center" style="height: 90%">
                         <a target="_blank" href="https://icar.churchcenter.com/people/forms/606976"><img
@@ -85,21 +94,39 @@
     <section id="information">
         <div class="container">
             <div class="row ">
-                <div class="col-sm-6">
+                <div class="col-sm-6 col-md-3">
                     <div class="box text-center">
                         <img class="img-fluid mb-4" width="170px" height="170px" style="border-radius: 100px"
+                            alt="Satirio Dos Santos A&R" src="{{ asset('assets/img/index/events/satirio.jpg') }}">
+                        <h4>Satirio Dos Santos</h4>
+                        <h5>Apostol</h5>
+
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="box text-center">
+                        <img class="img-fluid mb-4" width="140px" height="140px" style="border-radius: 100px"
+                            alt="Jose Guadalupe" src="{{ asset('assets/img/index/events/jose.jpg') }}">
+                        <h4 style="font-style: bold">Dr. Jose Gpe. Reyes</h4>
+                        <h5>Pastor</h5>
+
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="box text-center">
+                        <img class="img-fluid mb-4" width="160px" height="160px" style="border-radius: 100px"
                             alt="Job Gonzalez A&R" src="{{ asset('assets/img/index/events/job.jpg') }}">
                         <h4>Job Gonzalez</h4>
                         <h5>Salmista</h5>
 
                     </div>
                 </div>
-                <div class="col-sm-6">
+                <div class="col-sm-6 col-md-3">
                     <div class="box text-center">
-                        <img class="img-fluid mb-4" width="170px" height="170px" style="border-radius: 100px"
-                            alt="Satirio Dos Santos A&R" src="{{ asset('assets/img/index/events/satirio.jpg') }}">
-                        <h4>Satirio Dos Santos</h4>
-                        <h5>Apostol</h5>
+                        <img class="img-fluid mb-4" width="160px" height="160px" style="border-radius: 100px"
+                            alt="Eunice Rodriguez A&R" src="{{ asset('assets/img/index/events/eunice.jpg') }}">
+                        <h4>Eunice Rodriguez</h4>
+                        <h5>Salmista</h5>
 
                     </div>
                 </div>
@@ -140,7 +167,8 @@
                         </p>
 
                     </div>
-                    <a target="_blank" class="btn btn-primary btn-registro m-4" href="https://wa.link/7d24rx">Escríbenos</a>
+                    <a target="_blank" class="btn btn-primary btn-registro m-4"
+                        href="https://wa.link/7d24rx">Escríbenos</a>
                 </div>
             </div>
         </div>
