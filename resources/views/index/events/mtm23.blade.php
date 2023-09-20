@@ -98,8 +98,8 @@
                     <div class="box text-center">
                         <img class="img-fluid mb-4" width="170px" height="170px" style="border-radius: 100px"
                             alt="Satirio Dos Santos A&R" src="{{ asset('assets/img/index/events/satirio.jpg') }}">
-                        <h4>Satirio Dos Santos</h4>
-                        <h5>Apostol</h5>
+                        <h4>José Satirio Dos Santos</h4>
+                        <h5>Apóstol</h5>
 
                     </div>
                 </div>
@@ -107,7 +107,7 @@
                     <div class="box text-center">
                         <img class="img-fluid mb-4" width="140px" height="140px" style="border-radius: 100px"
                             alt="Jose Guadalupe" src="{{ asset('assets/img/index/events/jose.jpg') }}">
-                        <h4 style="font-style: bold">Dr. Jose Gpe. Reyes</h4>
+                        <h4 style="font-style: bold">Dr. José Gpe. Reyes</h4>
                         <h5>Pastor</h5>
 
                     </div>
@@ -137,7 +137,7 @@
                         <h3>ANFITRIONES</h3>
                         <img class="img-fluid mb-4" width="350px" height="200px" style="border-radius: 300px"
                             alt="Pedro y Leticia Cantu A&R" src="{{ asset('assets/img/index/events/apostoles.png') }}">
-                        <h4>Pedro y Leticia Cantu</h4>
+                        <h4>Pedro y Leticia Cantú</h4>
                         <h5>Pastores</h5>
 
                     </div>
@@ -156,14 +156,16 @@
 
                         <h4>Jueves | 02 de Noviembre</h4>
                         <p>
-                            <strong>3:00 PM - 6:00 PM </strong> Plenarias <br>
-                            <strong>7:30 PM </strong> Celebración y Plenaria <br>
+                            <strong>9:30 AM - 12:30 PM </strong>Talleres y plenarias <br>
+                            <strong>5:30 PM </strong> Comienzo <br>
+                            <strong>7:30 PM </strong> Celebración<br>
                         </p>
 
                         <h4>Viernes | 03 de Noviembre</h4>
                         <p>
-                            <strong>3:00 PM - 6:00 PM </strong> Plenarias <br>
-                            <strong>7:30 PM </strong> Celebración y Plenaria <br>
+                            <strong>9:30 AM - 12:30 PM </strong>Talleres y plenarias <br>
+                            <strong>5:30 PM </strong> Comienzo <br>
+                            <strong>7:30 PM </strong> Celebración <br>
                         </p>
 
                     </div>
