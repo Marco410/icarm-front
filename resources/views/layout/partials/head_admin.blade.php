@@ -1,10 +1,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
 <!-- CSRF Token -->
 <meta name="csrf-token" content="{{ csrf_token() }}">
 <title>{{ $page }} | ICARM Admin</title>
-<!-- Favicons -->
 
+
+<!-- Favicons -->
 <link rel="shortcut icon" href="{{ asset('assets/img/favicon.png') }}">
 <!-- Bootstrap CSS -->
 <link rel="stylesheet" href="{{ asset('assets_admin/plugins/bootstrap/css/bootstrap.min.css') }}">

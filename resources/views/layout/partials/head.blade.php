@@ -1,6 +1,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
 <title>{{ $page }} | Amor & Restauración</title>
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
 
 
 <meta property="og:url" content="https://amoryrestauracion.tv" />
