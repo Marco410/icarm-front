@@ -12,14 +12,9 @@
                         <h2 class="footer-title">Campus Central</h2>
                         <div class="footer-contact-info">
                             <small>10707 Haddington Dr<br> Houston TX. 77043 </small> <br>
-                            <small class="element">Miércoles 7:30PM</small> <br>
                             <small class="des">Reunión General</small> <br>
-                            <small class="element">Viernes 8:00PM</small> <br>
-                            <small class="des">Servicio de Oración</small> <br>
-                            <small class="element">Domingo 9:00AM</small> <br>
-                            <small class="des">Adultos y Jóvenes sin niños</small> <br>
                             <small class="element">Domingo 11:00AM</small> <br>
-                            <small class="des">Familias y Jóvenes con niños</small> <br>
+                            <small class="element">Miércoles 7:30PM</small> <br>
                         </div>
                     </div>
                     <!-- /Footer Widget -->
