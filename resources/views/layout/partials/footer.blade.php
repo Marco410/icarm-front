@@ -13,7 +13,7 @@
                         <div class="footer-contact-info">
                             <small>10707 Haddington Dr<br> Houston TX. 77043 </small> <br>
                             <small class="des">Reunión General</small> <br>
-                            <small class="element">Domingo 11:00AM</small> <br>
+                            <small class="element">Domingo 10:00AM</small> <br>
                             <small class="element">Miércoles 7:30PM</small> <br>
                         </div>
                     </div>
