@@ -2033,6 +2033,18 @@ html.menu-opened body {
     padding: 60px 0;
 }
 
+.anuncios-section {
+    background-color: var(--white);
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+
+.anuncios-section .image img {
+    border-radius: 15px;
+    height: auto;
+    box-shadow: 0 5px 20px rgb(0 0 0 / 30%);
+}
+
 .como-funciona {
     background-color: var(--primary);
     padding-bottom: 160px;
