@@ -140,8 +140,6 @@ Version      : 1.0
     });
 
     if ($(".anuncios-carousel").length > 0) {
-        console.log("anuncios");
-
         $(".anuncios-carousel").owlCarousel({
             loop: true,
             center: true,
@@ -286,7 +284,6 @@ Version      : 1.0
     }
 
     if ($(".oracion-carousel").length > 0) {
-        console.log("Oracion");
         $(".oracion-carousel").owlCarousel({
             loop: true,
             center: true,
@@ -413,4 +410,42 @@ Version      : 1.0
     function dismissLoader() {
         $(".page-loading").fadeOut();
     }
+
+    const images = document.querySelectorAll(".anuncio-img img");
+    let imgSrc;
+    // get images src onclick
+    /*     images.forEach((img) => {
+        console.log("img");
+        console.log(img);
+
+        img.addEventListener("click", (e) => {
+            console.log("ON click");
+            imgSrc = e.target.src;
+            //run modal function
+            imgModal(imgSrc);
+        });
+    }); */
+
+    $(".anuncio-img").on("click", function () {
+        var imgSrc = $(this).children().attr("src");
+
+        imgModal(imgSrc);
+    });
+    //creating the modal
+    let imgModal = (src) => {
+        const modal = document.createElement("div");
+        modal.setAttribute("class", "modal-image");
+        document.querySelector(".main").append(modal);
+        const newImage = document.createElement("img");
+        newImage.setAttribute("src", src);
+        const closeBtn = document.createElement("i");
+        closeBtn.setAttribute("class", "fas fa-times closeBtn");
+        closeBtn.onclick = () => {
+            modal.remove();
+        };
+        document.querySelector(".modal-image").onclick = () => {
+            modal.remove();
+        };
+        modal.append(newImage, closeBtn);
+    };
 })(jQuery);

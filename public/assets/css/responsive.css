@@ -134,6 +134,12 @@
     .home-banner-landing {
         max-height: 600px !important;
     }
+
+    .modal-image img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
 }
 
 .icono-comentarios {

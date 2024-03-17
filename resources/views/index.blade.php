@@ -85,100 +85,76 @@
                                         <div class="owl-stage"
                                             style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s; width: 10200px;">
                                             <div data-aos="zoom-in" class="owl-item active">
-                                                <a href="{{ asset('assets/img/anuncios/1.png') }}">
-                                                    <div class="cate-widget">
-                                                        <img class="img-fluid serv-img" alt="Bienvendios"
-                                                            src="{{ asset('assets/img/anuncios/1.png') }}">
-                                                    </div>
-                                                </a>
+                                                <div class="cate-widget anuncio-img">
+                                                    <img class="img-fluid serv-img" alt="Bienvendios"
+                                                        src="{{ asset('assets/img/anuncios/1.png') }}">
+                                                </div>
                                             </div>
                                             <div data-aos="zoom-in" class="owl-item">
-                                                <a href="{{ asset('assets/img/anuncios/2.png') }}">
-                                                    <div class="cate-widget">
-                                                        <img class="img-fluid serv-img" alt="Campamento de Mujeres"
-                                                            src="{{ asset('assets/img/anuncios/2.png') }}">
-                                                    </div>
-                                                </a>
+                                                <div class="cate-widget anuncio-img">
+                                                    <img class="img-fluid serv-img" alt="Campamento de Mujeres"
+                                                        src="{{ asset('assets/img/anuncios/2.png') }}">
+                                                </div>
                                             </div>
                                             <div data-aos="zoom-in" class="owl-item">
-                                                <a href="{{ asset('assets/img/anuncios/3.png') }}">
-                                                    <div class="cate-widget">
-                                                        <img class="img-fluid serv-img" alt="Registro ICAR KIDS"
-                                                            src="{{ asset('assets/img/anuncios/3.png') }}">
-                                                    </div>
-                                                </a>
+                                                <div class="cate-widget anuncio-img">
+                                                    <img class="img-fluid serv-img" alt="Registro ICAR KIDS"
+                                                        src="{{ asset('assets/img/anuncios/3.png') }}">
+                                                </div>
                                             </div>
                                             <div data-aos="zoom-in" class="owl-item">
-                                                <a href="{{ asset('assets/img/anuncios/4.png') }}">
-                                                    <div class="cate-widget">
-                                                        <img class="img-fluid serv-img" alt="Podcast Pastor Pedro Cantú"
-                                                            src="{{ asset('assets/img/anuncios/4.png') }}">
-                                                    </div>
-                                                </a>
+                                                <div class="cate-widget anuncio-img">
+                                                    <img class="img-fluid serv-img" alt="Podcast Pastor Pedro Cantú"
+                                                        src="{{ asset('assets/img/anuncios/4.png') }}">
+                                                </div>
                                             </div>
                                             <div data-aos="zoom-in" class="owl-item">
-                                                <a href="{{ asset('assets/img/anuncios/5.png') }}">
-                                                    <div class="cate-widget">
-                                                        <img class="img-fluid serv-img" alt="Serie de evangelismo abril 2024"
-                                                            src="{{ asset('assets/img/anuncios/5.png') }}">
-                                                    </div>
-                                                </a>
+                                                <div class="cate-widget anuncio-img">
+                                                    <img class="img-fluid serv-img" alt="Serie de evangelismo abril 2024"
+                                                        src="{{ asset('assets/img/anuncios/5.png') }}">
+                                                </div>
                                             </div>
                                             <div data-aos="zoom-in" class="owl-item">
-                                                <a href="{{ asset('assets/img/anuncios/6.png') }}">
-                                                    <div class="cate-widget">
-                                                        <img class="img-fluid serv-img" alt="Redes Sociales"
-                                                            src="{{ asset('assets/img/anuncios/6.png') }}">
-                                                    </div>
-                                                </a>
+                                                <div class="cate-widget anuncio-img">
+                                                    <img class="img-fluid serv-img" alt="Redes Sociales"
+                                                        src="{{ asset('assets/img/anuncios/6.png') }}">
+                                                </div>
                                             </div>
                                             <div data-aos="zoom-in" class="owl-item">
-                                                <a href="{{ asset('assets/img/anuncios/7.png') }}">
-                                                    <div class="cate-widget">
-                                                        <img class="img-fluid serv-img" alt="Guerreras sabias y valientes"
-                                                            src="{{ asset('assets/img/anuncios/7.png') }}">
-                                                    </div>
-                                                </a>
+                                                <div class="cate-widget anuncio-img">
+                                                    <img class="img-fluid serv-img" alt="Guerreras sabias y valientes"
+                                                        src="{{ asset('assets/img/anuncios/7.png') }}">
+                                                </div>
                                             </div>
                                             <div data-aos="zoom-in" class="owl-item">
-                                                <a href="{{ asset('assets/img/anuncios/8.png') }}">
-                                                    <div class="cate-widget">
-                                                        <img class="img-fluid serv-img" alt="Ignited Youth ICAR"
-                                                            src="{{ asset('assets/img/anuncios/8.png') }}">
-                                                    </div>
-                                                </a>
+                                                <div class="cate-widget anuncio-img">
+                                                    <img class="img-fluid serv-img" alt="Ignited Youth ICAR"
+                                                        src="{{ asset('assets/img/anuncios/8.png') }}">
+                                                </div>
                                             </div>
                                             <div data-aos="zoom-in" class="owl-item">
-                                                <a href="{{ asset('assets/img/anuncios/9.png') }}">
-                                                    <div class="cate-widget">
-                                                        <img class="img-fluid serv-img" alt="Fuse ICAR"
-                                                            src="{{ asset('assets/img/anuncios/9.png') }}">
-                                                    </div>
-                                                </a>
+                                                <div class="cate-widget anuncio-img">
+                                                    <img class="img-fluid serv-img" alt="Fuse ICAR"
+                                                        src="{{ asset('assets/img/anuncios/9.png') }}">
+                                                </div>
                                             </div>
                                             <div data-aos="zoom-in" class="owl-item">
-                                                <a href="{{ asset('assets/img/anuncios/10.png') }}">
-                                                    <div class="cate-widget">
-                                                        <img class="img-fluid serv-img" alt="Servicios Semanales"
-                                                            src="{{ asset('assets/img/anuncios/10.png') }}">
-                                                    </div>
-                                                </a>
+                                                <div class="cate-widget anuncio-img">
+                                                    <img class="img-fluid serv-img" alt="Servicios Semanales"
+                                                        src="{{ asset('assets/img/anuncios/10.png') }}">
+                                                </div>
                                             </div>
                                             <div data-aos="zoom-in" class="owl-item">
-                                                <a href="{{ asset('assets/img/anuncios/RDT.png') }}">
-                                                    <div class="cate-widget">
-                                                        <img class="img-fluid serv-img" alt="Retiro de trasnformación abril 26 al 27"
-                                                            src="{{ asset('assets/img/anuncios/RDT.png') }}">
-                                                    </div>
-                                                </a>
+                                                <div class="cate-widget anuncio-img">
+                                                    <img class="img-fluid serv-img" alt="Retiro de trasnformación abril 26 al 27"
+                                                        src="{{ asset('assets/img/anuncios/RDT.png') }}">
+                                                </div>
                                             </div>
                                             <div data-aos="zoom-in" class="owl-item">
-                                                <a href="{{ asset('assets/img/anuncios/semana_santa.png') }}">
-                                                    <div class="cate-widget">
-                                                        <img class="img-fluid serv-img" alt="Semana Santa"
-                                                            src="{{ asset('assets/img/anuncios/semana_santa.png') }}">
-                                                    </div>
-                                                </a>
+                                                <div class="cate-widget anuncio-img">
+                                                    <img class="img-fluid serv-img" alt="Semana Santa"
+                                                        src="{{ asset('assets/img/anuncios/semana_santa.png') }}">
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
