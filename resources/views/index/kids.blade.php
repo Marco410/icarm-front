@@ -37,6 +37,13 @@
     <section class="blog">
         <div class="container">
             <div class="row">
+                <div class="col-sm-12 text-center mb-4">
+                    <video autoplay loop muted plays-inline style="border-radius: 15px;" >
+                        <source src="{{ asset('assets/video/index/kids.mp4') }}" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+            <div class="row mt-4">
                 <div class="col-sm-12 text-center">
                     <a href="https://www.youtube.com/@icarkids1677/featured" target="_blank"><i class="fab fa-youtube"
                             style="font-size: 70px"></i></a>

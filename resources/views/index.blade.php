@@ -108,12 +108,7 @@
                                                         src="{{ asset('assets/img/anuncios/4.png') }}">
                                                 </div>
                                             </div>
-                                            <div data-aos="zoom-in" class="owl-item">
-                                                <div class="cate-widget anuncio-img">
-                                                    <img class="img-fluid serv-img" alt="Serie de evangelismo abril 2024"
-                                                        src="{{ asset('assets/img/anuncios/5.png') }}">
-                                                </div>
-                                            </div>
+                                         
                                             <div data-aos="zoom-in" class="owl-item">
                                                 <div class="cate-widget anuncio-img">
                                                     <img class="img-fluid serv-img" alt="Redes Sociales"
@@ -150,12 +145,7 @@
                                                         src="{{ asset('assets/img/anuncios/RDT.png') }}">
                                                 </div>
                                             </div>
-                                            <div data-aos="zoom-in" class="owl-item">
-                                                <div class="cate-widget anuncio-img">
-                                                    <img class="img-fluid serv-img" alt="Semana Santa"
-                                                        src="{{ asset('assets/img/anuncios/semana_santa.png') }}">
-                                                </div>
-                                            </div>
+                                          
                                         </div>
                                     </div>
                                 </div>
